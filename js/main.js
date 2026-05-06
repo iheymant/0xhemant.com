@@ -1,9 +1,7 @@
-const menuBtn = document.querySelector('.menu-btn');
-const mobileMenu = document.querySelector('.mobile-menu');
 
 
-// Event Listeners 
+// Functions
 
-menuBtn.addEventListener('click', () => {
-  mobileMenu.classList.toggle('active');
-});
+
+// Condiontens
+
