@@ -4,34 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>0xhemant</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <header>
-      <nav>
-        <h2>0xhemant</h2>
-        <div>
-          <a href="#hero">Home</a>
-          <a href="#projects">Projects</a>
-          <a href="#blog">Blog</a>
-          <a href="#contact">Contact</a>
-          <a href="about/index.html">About</a>
-        </div>
-      </nav>
+      <div class="container">
+        <nav>
+          <h1 class="logo">0xhemant</h1>
+
+          <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="/projects/index.html">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="/contact/index.html">Contact</a></li>
+            <li><a href="/about/index.html">About</a></li>
+          </ul>
+
+          <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+
+      <div class="mobile-menu">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="/projects/index.html">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="/contact/index.html">Contact</a></li>
+          <li><a href="/about/index.html">About</a></li>
+        </ul>
+      </div>
     </header>
 
     <main>
       <section id="hero">
-        <h1>0xhemant</h1>
-        <p>
-          Welcome to my personal website! I'm a passionate developer and
-          technology enthusiast. Here you'll find my projects, blog posts, and
-          contact information. Feel free to explore and connect with me!
-        </p>
+        <div class="container">
+          <h2>Hi, I'm Hemant</h2>
+          <p>I build web apps and experiment with ideas in tech.</p>
+          
+        </div>
+      </section>
+
+      <section id="blog">
+        <div class="container">
+          <h2>Blog</h2>
+          <p>Coming soon...</p>
+        </div>
       </section>
     </main>
 
     <footer>
-      <p>&copy; 2026 0xhemant. All rights reserved.</p>
+      <div class="container">
+        <p>&copy; 2026 0xhemant. All rights reserved.</p>
+      </div>
     </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
