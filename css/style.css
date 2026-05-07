@@ -90,6 +90,7 @@ body {
   line-height: var(--line-height);
   background-color: var(--bg);
   color: var(--text);
+  scrollbar-gutter: stable;
 }
 
 a,
@@ -191,15 +192,21 @@ nav {
   width: 100%;
   height: 100vh;
   opacity: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; 
   align-items: stretch;
 
-  background: var(--bg);
+  background: var(--bg); 
+  /* backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur); */
 
-  transform: translateY(-100%);
+  transform:
+  translateY(-100%)
+  scale(0.98);
   transition:
     transform var(--transition-slow),
     opacity var(--transition);
@@ -214,6 +221,34 @@ nav {
 .mobile-menu li {
   list-style: none;
   width: 100%;
+  opacity: 0;
+  transform:
+    translateY(20px);
+
+  transition:
+    transform var(--transition-slow) cubic-bezier(0.22, 1, 0.36, 1),
+    opacity var(--transition);
+}
+
+.mobile-menu.active li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mobile-menu.active li:nth-child(1) {
+  transition-delay: .2s;
+}
+
+.mobile-menu.active li:nth-child(2) {
+  transition-delay: 0.3s;
+}
+
+.mobile-menu.active li:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
+.mobile-menu.active li:nth-child(4) {
+  transition-delay: 0.5s;
 }
 
 .mobile-menu a {
@@ -225,13 +260,16 @@ nav {
 }
 
 .mobile-menu.active {
-  transform: translateY(0);
+  transform:
+    translateY(0)
+    scale(1);
   pointer-events: all;
   opacity: 1;
 }
 
 .mobile-menu ul li a:hover {
   opacity: var(--opacity-hover);
+  transform: translateX(0.2px);
 }
 
 .mobile-menu ul li a:active {
@@ -313,14 +351,3 @@ footer {
   opacity: 0.7;
 }
 
-@media (max-width: 768px) {
-
-  .nav-links {
-    display: none;
-  }
-
-  .ham-menu {
-    display: flex;
-  }
-
-}

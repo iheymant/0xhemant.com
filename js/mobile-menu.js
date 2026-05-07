@@ -7,6 +7,16 @@ const mobileMenu = document.querySelector('.mobile-menu');
 hamMenu.addEventListener('click', () => {
   hamMenu.classList.toggle('active');
   mobileMenu.classList.toggle('active');
+
+  if (mobileMenu.classList.contains('active')) {
+
+    document.body.style.overflow = 'hidden';
+
+  } else {
+
+    document.body.style.overflow = '';
+
+  }
   
 });
 
@@ -18,5 +28,7 @@ window.addEventListener('resize', () => {
 
     hamMenu.classList.remove('active');
   }
+  
 
 });
+
