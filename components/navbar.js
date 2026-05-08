@@ -1,10 +1,10 @@
-import { navbar } from '../data/navbarData.js';
+import { navbarData } from '../data/navbarData.js';
 
 export function loadNavbar() {
 
   const header = document.querySelector('#header');
 
-  const desktopLinks = navbar
+  const desktopLinks = navbarData
     .filter(link => !link.mobileOnly)
     .map(link => {
 
@@ -24,7 +24,7 @@ export function loadNavbar() {
     .join('');
 
 
-  const mobileLinks = navbar
+  const mobileLinks = navbarData
     .filter(link => !link.desktopOnly)
     .map(link => {
 
@@ -52,9 +52,9 @@ export function loadNavbar() {
 
         <nav>
 
-          <h1 href="/" class="logo">
+          <a href="/" class="logo">
             0xhemant
-          </h1>
+          </a>
 
           <ul class="nav-links">
             ${desktopLinks}
