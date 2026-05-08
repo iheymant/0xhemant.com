@@ -183,6 +183,11 @@ nav {
   user-select: none;
 }
 
+.nav-links li a.active-link {
+  opacity: var(--opacity-hover);
+  font-weight: 500;
+}
+
 /* Mobile Menu */
 
 .mobile-menu {
@@ -230,6 +235,12 @@ nav {
     opacity var(--transition);
 }
 
+.mobile-menu li a.active-link {
+  color: var(--primary);
+  transform: translateX(.5px);
+  font-weight: 500;
+}
+
 .mobile-menu.active li {
   opacity: 1;
   transform: translateY(0);
@@ -274,7 +285,6 @@ nav {
 
 .mobile-menu ul li a:active {
   opacity: var(--opacity);
-  color: var(--primary);
   user-select: none;
 }
 
@@ -332,6 +342,13 @@ nav {
 /* Thoughts */
 
 #thoughts {
+  background-color: var(--bg-secondary);
+  min-height: 30vh;
+}
+
+/* Builds */
+
+#builds {
   background-color: var(--bg-secondary);
   min-height: 30vh;
 }
