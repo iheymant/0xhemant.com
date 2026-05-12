@@ -9,3 +9,13 @@
   }
 
 }
+
+@media (max-width: 768px) {
+
+  .header-expand-area {
+    display: none;
+  }
+
+}
+
+
