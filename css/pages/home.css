@@ -1,0 +1,6 @@
+#hero {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  min-height: 80vh;
+}

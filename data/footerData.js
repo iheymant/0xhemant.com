@@ -9,13 +9,13 @@ export const footerData = [
         deskstopOnly: false,
         external: false
       },
-      {
-        name: "Thoughts",
-        url: "/thoughts/",
-        mobileOnly: false,
-        deskstopOnly: false,
-        external: false
-      },
+      // {
+      //   name: "Thoughts",
+      //   url: "/thoughts/",
+      //   mobileOnly: false,
+      //   deskstopOnly: false,
+      //   external: false
+      // },
     ]
   },
   {

@@ -1,0 +1,16 @@
+h1 {
+  font-size: var(--text-xxl);
+  margin-bottom: var(--space);
+  line-height: var(--lineheight-md);
+}
+
+h2 {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space);
+  line-height: var(--lineheight-md);
+}
+
+p {
+  opacity: var(--opacity-secondary);
+  color: var(--text-secondary);
+}
