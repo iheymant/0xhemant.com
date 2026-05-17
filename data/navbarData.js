@@ -43,12 +43,12 @@ export const navbarData = [
       },
     ]
   },
-  {
-    name: "Thoughts",
-    url: "/thoughts/",
-    mobileOnly: false,
-    deskstopOnly: false,
-    external: false,
-    dropdown: false,
-  },
+  // {
+  //   name: "Thoughts",
+  //   url: "/thoughts/",
+  //   mobileOnly: false,
+  //   deskstopOnly: false,
+  //   external: false,
+  //   dropdown: false,
+  // },
 ];

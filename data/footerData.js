@@ -19,7 +19,7 @@ export const footerData = [
     ]
   },
   {
-    section: 'Social',
+    section: 'Socials',
     links: [
       {
         name: 'X(formerly Twitter)',
