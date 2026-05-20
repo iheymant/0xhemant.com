@@ -1,4 +1,4 @@
-import { navbarData } from '../data/navbarData.js';
+import { navbarData } from '/data/navbarData.js';
 
 export function loadNavbar() {
 
@@ -66,9 +66,7 @@ export function loadNavbar() {
         </a>
       `;
 
-    })
-
-    .join('');
+    }).join('');
 
 
   /* =========================
@@ -109,9 +107,7 @@ export function loadNavbar() {
         </li>
       `;
 
-    })
-
-    .join('');
+    }).join('');
 
 
   /* =========================
@@ -175,7 +171,7 @@ export function loadNavbar() {
 
 
   /* FINAL HEADER */
-  header.innerHTML = `
+  header.innerHTML =`
 
     <!-- HEADER -->
     <header class="site-header">

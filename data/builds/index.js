@@ -4,6 +4,7 @@ export const buildsProjectsData = [
     name: 'VoiceKeep',
     tagline: 'Realtime meeting memory system.',
     status: 'Live',
+    visibility: 'public',
     priority: 1,
     category: [
       'productivity',
@@ -14,9 +15,9 @@ export const buildsProjectsData = [
     featured: true,
     description: 'Capture and save live meeting captions from Online Meetings with speaker tracking and conversational flow.',
     links: {
-      install: '',
-      privacy: '',
-      tutorial: ''
+      install: 'https://instagram.com/0xhemant',
+      privacy: 'http://127.0.0.1:5500/builds/voicekeep/privacy',
+      Catelog: 'https://instagram.com/0xhemant',
     },
     seo: {
       title:
@@ -32,20 +33,20 @@ export const buildsProjectsData = [
         'voice'
       ]
     },
-    version: '0.1.0',
+    version: '0.1.0 [Beta]',
     stack: [
       'html',
       'javascript',
       'css',
       'web-api'
     ],
-    launchedDate: '2026',
-    lastUpdatedDate: '2026',
+    launchedDate: 'May-2026',
+    lastUpdatedDate: 'no last update',
     thumbnail:
-      '/assets/builds/voicekeep/cover.webp',
+      '/assets/builds/images/voicekeep/logo.png',
 
     logo:
-      '/assets/builds/voicekeep/logo.svg',
+      '/assets/builds/images/voicekeep/logo.png',
     pages: {
       overview:
         '/builds/voicekeep/',

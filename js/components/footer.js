@@ -1,4 +1,4 @@
-import { footerData } from "../data/footerData.js";
+import { footerData } from "/data/footerData.js";
 
 export function loadFooter() {
 

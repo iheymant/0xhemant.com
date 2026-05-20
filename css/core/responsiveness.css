@@ -18,4 +18,155 @@
 
 }
 
+/* TABLET */
 
+@media (max-width: 768px) {
+
+  .build-overview {
+    padding: var(--space-lg) 0;
+  }
+
+  .build-overview .container {
+    padding-inline: var(--padding);
+  }
+
+  .build-content-section {
+    padding-bottom: var(--space-lg);
+  }
+
+  .build-content-section:not(:first-child) {
+    padding-top: var(--space-lg);
+  }
+
+  .build-section-title {
+    margin-bottom: var(--space);
+    font-size: calc(var(--text-lg) + 0.1rem);
+  }
+
+  .build-text {
+    line-height: 1.75;
+  }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+
+  .build-overview .container {
+    padding-inline: var(--padding-sm);
+  }
+
+  .build-section-title {
+    font-size: var(--text-lg);
+    letter-spacing: -0.02em;
+  }
+
+  .build-text {
+    font-size: var(--text-sm);
+    line-height: 1.7;
+  }
+
+}
+
+/* Builds Section Cards */
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+
+  .builds-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .builds-section {
+    padding: 4rem 0;
+  }
+
+  .builds-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space);
+  }
+
+  .build-card-link {
+    min-height: unset;
+    padding: var(--padding-lg);
+  }
+
+  .build-card-top {
+    margin-bottom: var(--space-lg);
+  }
+
+  .build-card-footer {
+    margin-top: var(--space-lg);
+  }
+
+}
+
+/* SMALL MOBILE*/
+
+@media (max-width: 480px) {
+
+  .builds-section .container {
+    padding-inline: var(--padding);
+  }
+
+  .build-card-title {
+    font-size: 1.35rem;
+  }
+
+  .build-card-description {
+    font-size: var(--text-sm);
+    line-height: 1.7;
+  }
+
+}
+
+/* BUILDS EMPTY STATE */
+
+/* TABLET*/
+
+@media (max-width: 768px) {
+
+  .builds-section-empty {
+    min-height: 65vh;
+    padding: 4rem 0;
+  }
+
+  .empty-builds-image {
+    width: min(100%, 260px);
+
+    margin-bottom: var(--space-lg);
+  }
+
+  .empty-builds-description {
+    font-size: var(--text-base);
+    line-height: 1.75;
+  }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+
+  .builds-section-empty .container {
+    padding-inline: var(--padding);
+  }
+
+  .empty-builds-title {
+    font-size: 2.1rem;
+  }
+
+  .empty-builds-description {
+    font-size: var(--text-sm);
+    line-height: 1.7;
+  }
+
+}

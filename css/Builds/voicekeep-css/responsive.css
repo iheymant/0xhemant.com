@@ -1,0 +1,64 @@
+/* Privacy Policy VoiceKeep*/
+
+/* TABLET */
+
+@media (max-width: 768px) {
+
+  .legal-page-section {
+    padding: 4rem 0;
+  }
+
+  .legal-page-content {
+    width: 100%;
+  }
+
+  .legal-page-header {
+    margin-bottom: 4rem;
+  }
+
+  .legal-meta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .legal-section {
+    padding-block: var(--space-xl);
+  }
+
+  .legal-page-description {
+    font-size: var(--text-base);
+    line-height: 1.75;
+  }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+
+  .legal-page-section .container {
+    padding-inline: var(--padding);
+  }
+
+  .legal-page-title {
+    font-size: 2.4rem;
+    line-height: 1;
+  }
+
+  .legal-page-description {
+    font-size: var(--text-sm);
+  }
+
+  .legal-meta-item {
+    padding: var(--padding);
+  }
+
+  .legal-section-title {
+    font-size: 1.25rem;
+  }
+
+  .legal-section-text {
+    font-size: var(--text-sm);
+    line-height: 1.8;
+  }
+
+}

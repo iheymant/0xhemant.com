@@ -1,0 +1,36 @@
+
+.build-hero {
+  width: 100%;
+  padding: var(--space-xl) 0;
+  background: var(--bg);
+}
+
+.build-hero .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: var(--padding);
+}
+
+.build-hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  max-width: 800px;
+}
+
+.build-hero-title {
+  margin: 0;
+  font-size: var(--text-xxl);
+  line-height: var(--lineheight-md);
+  font-weight: 700;
+  color: var(--text);
+}
+
+.build-hero-description {
+  margin: 0;
+  font-size: var(--text-base);
+  line-height: var(--line-height);
+  color: var(--text-secondary);
+  max-width: 65ch;
+}

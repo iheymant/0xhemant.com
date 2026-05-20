@@ -1,0 +1,65 @@
+.build-links {
+  width: 100%;
+  padding-bottom: var(--space-xl);
+  background: var(--bg);
+}
+
+.build-links .container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-inline: var(--padding);
+  margin-left: var(--space-md);
+}
+
+.build-links-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+.build-link-button {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+
+  padding-bottom: 2px;
+
+  font-size: var(--text-base);
+  font-weight: 500;
+  line-height: var(--line-height);
+
+  color: var(--text);
+  text-decoration: none;
+
+  transition:
+    color var(--transition-fast),
+    opacity var(--transition-fast);
+}
+
+.build-link-button::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 1px;
+
+  background: currentColor;
+  opacity: 0.2;
+
+  transition: opacity var(--transition-fast);
+}
+
+.build-link-button:hover {
+  color: var(--primary);
+}
+
+.build-link-button:hover::after {
+  opacity: 1;
+}

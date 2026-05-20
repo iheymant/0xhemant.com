@@ -1,5 +1,5 @@
-import { loadNavbar } from "../components/navbar.js";
-import { loadFooter } from "../components/footer.js";
+import { loadNavbar } from "./components/navbar.js";
+import { loadFooter } from "./components/footer.js";
 
 
 // Functions
@@ -7,5 +7,5 @@ import { loadFooter } from "../components/footer.js";
 loadNavbar();
 loadFooter();
 
-// Condiontens
+// Conditions
 
