@@ -14,5 +14,13 @@ body {
   background-color: var(--bg);
   color: var(--text);
   scrollbar-gutter: stable;
-
+  scroll-behavior: smooth;
 }
+
+body::selection {
+  background: var(--primary);
+  color: var(--bg);
+}
+
+input {
+  caret-color: var(--bg);} 

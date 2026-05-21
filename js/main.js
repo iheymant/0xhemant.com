@@ -1,4 +1,4 @@
-import { loadNavbar } from "./components/navbar.js";
+import { loadNavbar } from "/js/components/navbar/navbar.js";
 import { loadFooter } from "./components/footer.js";
 
 
