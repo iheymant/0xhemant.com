@@ -1,7 +1,9 @@
 /* HAMBURGER MENU */
 
 .ham-menu {
+
   width: 24px;
+  
   height: 18px;
 
   position: relative;
@@ -10,7 +12,11 @@
 
   cursor: pointer;
 
-  z-index: 5000;
+  z-index: 1400;
+
+  background: transparent;
+
+  border: none;
 }
 
 
@@ -27,7 +33,8 @@
 
   border-radius: 999px;
 
-  background: var(--text);
+  background:
+    var(--text);
 
   transform-origin: center;
 
@@ -54,6 +61,8 @@
 .ham-menu.active {
   transform: scale(0.95);
 }
+
+
 
 /*TOP LINE */
 
@@ -85,3 +94,4 @@
   transform:
     rotate(-45deg);
 }
+

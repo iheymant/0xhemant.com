@@ -1,4 +1,4 @@
-import { renderDropdownTrigger } from "./renderDropdownTrigger.js";
+
 import { renderNavLinks } from "./renderNavlinks.js";
 
 
@@ -6,27 +6,28 @@ export function renderDesktopNav() {
 
   return `
 
-    <div class="container">
+    <nav class="desktop-nav">
 
-      <nav class="desktop-nav">
+      <a href="/" class="logo">
 
-        <a href="/" class="logo">
+        0xhemant
 
-          0xhemant
-
-        </a>
+      </a>
 
 
-        <ul class="nav-links">
+      <ul class="nav-links">
 
-          ${renderNavLinks()}
+        ${renderNavLinks()}
 
-        </ul>
+      </ul>
+
+
+      
 
       </nav>
 
-    </div>
 
   `;
 
 }
+

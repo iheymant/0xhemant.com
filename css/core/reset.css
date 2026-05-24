@@ -22,5 +22,5 @@ body::selection {
   color: var(--bg);
 }
 
-input {
-  caret-color: var(--bg);} 
+/* input {
+  caret-color: var(--bg);}  */

@@ -7,16 +7,14 @@ export function renderDropdownTrigger(link) {
     <li class="dropdown-wrapper">
 
       <a
-        href="${link.url}"
         class="dropdown-trigger"
+        data-menu="${link.id}"
+        href="${link.url}"
       >
 
         ${link.name}
 
       </a>
-
-
-      ${renderDropdownMenu(link)}
 
     </li>
 

@@ -38,37 +38,65 @@ export function renderMobileSubmenus() {
 
       return `
 
-        <div
-          class="mobile-panel"
-          id="${link.id}-panel"
-        >
+      <div
+        class="
+    mobile-panel
+    mobile-sub-panel
+  "
+        id="${link.id}-panel"
+        data-parent="main-panel"
+      >
 
-          <div class="mobile-panel-header">
+        <div class="mobile-panel-header">
 
-            <button
-              class="back-button"
-            >
-
-              ← Back
-
-            </button>
-
-          </div>
-
-
-          <ul
-            class="
-              mobile-submenu-links
-            "
+          <button
+           class="back-button"
+           data-back
           >
 
-            ${childrenHTML}
+            ← Back
 
-          </ul>
+          </button>
+
+    
+
+          <p class="
+              mobile-sub-panel-category-text
+            ">
+
+              ${link.dropdownCategoryText}
+
+            </p>
+
+
+            <p class="
+              mobile-sub-panel-category-description
+            ">
+
+              ${link.dropdownCategoryTextDescription}
+
+            </p>
+
+          
+
+          
 
         </div>
 
-      `;
+
+        <ul
+          class="
+              mobile-submenu-links
+            "
+        >
+
+          ${childrenHTML}
+
+        </ul>
+
+      </div>
+
+        `;
 
     }).join('');
 

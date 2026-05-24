@@ -10,7 +10,7 @@ export const navbarData = [
   },
   {
     name: "Builds",
-    id:"builds",
+    id:"builds-menu",
     url: "/builds/",
     mobileOnly: false,
     deskstopOnly: false,

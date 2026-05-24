@@ -1,8 +1,18 @@
 export function setupDropdownMenu() {
 
-  const dropdownWrappers =
+  const siteHeader =
+    document.querySelector(
+      '.site-header'
+    );
+
+  const triggers =
     document.querySelectorAll(
-      '.dropdown-wrapper'
+      '.dropdown-trigger'
+    );
+
+  const megaMenus =
+    document.querySelectorAll(
+      '.mega-menu'
     );
 
   const overlay =
@@ -10,10 +20,22 @@ export function setupDropdownMenu() {
       '.page-overlay'
     );
 
+  const normalLinks =
+    document.querySelectorAll(
+      '.nav-link'
+    );
+
+  const headerLogo =
+    document.querySelector(
+      '.logo'
+    );
+
 
 
   if (
-    !dropdownWrappers.length ||
+    !siteHeader ||
+    !triggers.length ||
+    !megaMenus.length ||
     !overlay
   ) {
 
@@ -23,84 +45,287 @@ export function setupDropdownMenu() {
 
 
 
-  /*  CLOSE ALL DROPDOWNS */
+  /* STATE  */
 
-  function closeAllDropdowns() {
+  let closeTimeout = null;
 
-    dropdownWrappers.forEach(
-      wrapper => {
+  let currentMenu = null;
 
-        wrapper.classList.remove(
-          'active'
-        );
 
-      }
+
+  /*  OVERLAY SIZE */
+
+  function updateOverlaySize() {
+
+    const headerHeight =
+      siteHeader.offsetHeight;
+
+
+
+    overlay.style.top =
+      `${headerHeight}px`;
+
+
+
+    overlay.style.height =
+      `calc(100vh - ${headerHeight}px)`;
+
+  }
+
+
+
+  /* REMOVE ACTIVE MENUS */
+
+  function cleanupMenus() {
+
+    megaMenus.forEach(menu => {
+
+      menu.classList.remove(
+        'active'
+      );
+
+
+
+      menu.classList.remove(
+        'closing'
+      );
+
+    });
+
+  }
+
+
+
+  /*  CLOSE MENUS */
+
+  function closeMenus() {
+
+    clearTimeout(closeTimeout);
+
+
+
+    if (!currentMenu) {
+
+      return;
+
+    }
+
+
+
+    currentMenu.classList.add(
+      'closing'
     );
+
+
+
+    siteHeader.classList.remove(
+      'dropdown-active'
+    );
+
 
 
     overlay.classList.remove(
       'active'
     );
 
+
+
+    closeTimeout = setTimeout(() => {
+
+      currentMenu.classList.remove(
+        'active'
+      );
+
+
+
+      currentMenu.classList.remove(
+        'closing'
+      );
+
+
+
+      currentMenu = null;
+
+    }, 350);
+
   }
 
 
 
-  /* OPEN DROPDOWN */
+  /* OPEN MENU */
 
-  function openDropdown(wrapper) {
+  function openMenu(menuId) {
 
-    closeAllDropdowns();
+    clearTimeout(closeTimeout);
 
 
-    wrapper.classList.add(
+
+    const targetMenu =
+      document.querySelector(
+        `#${menuId}`
+      );
+
+
+
+    if (!targetMenu) {
+
+      return;
+
+    }
+
+
+
+    /* SAME MENU */
+
+    if (currentMenu === targetMenu) {
+
+      currentMenu.classList.remove(
+        'closing'
+      );
+
+
+
+      return;
+
+    }
+
+
+
+    /* CLOSE OLD MENU */
+
+    if (currentMenu) {
+
+      currentMenu.classList.remove(
+        'active'
+      );
+
+
+
+      currentMenu.classList.remove(
+        'closing'
+      );
+
+    }
+
+
+
+    /* OPEN NEW */
+
+    currentMenu = targetMenu;
+
+
+
+    currentMenu.classList.add(
       'active'
     );
+
+
+
+    siteHeader.classList.add(
+      'dropdown-active'
+    );
+
 
 
     overlay.classList.add(
       'active'
     );
 
+
+
+    updateOverlaySize();
+
   }
 
 
 
-  /* SETUP EACH WRAPPER */
+  /*  TRIGGER EVENTS */
 
-  dropdownWrappers.forEach(
-    wrapper => {
+  triggers.forEach(trigger => {
 
-      wrapper.addEventListener(
-        'pointerenter',
-        () => {
+    trigger.addEventListener(
+      'pointerenter',
+      () => {
 
-          openDropdown(wrapper);
-
-        }
-      );
+        const menuId =
+          trigger.dataset.menu;
 
 
 
-      wrapper.addEventListener(
-        'pointerleave',
-        () => {
+        openMenu(menuId);
 
-          closeAllDropdowns();
+      }
+    );
 
-        }
-      );
+  });
+
+
+
+  /*  NORMAL LINKS */
+
+  normalLinks.forEach(link => {
+
+    link.addEventListener(
+      'pointerenter',
+      () => {
+
+        closeMenus();
+
+      }
+    );
+
+  });
+
+
+
+  /*  LOGO */
+
+  if (headerLogo) {
+
+    headerLogo.addEventListener(
+      'pointerenter',
+      () => {
+
+        closeMenus();
+
+      }
+    );
+
+  }
+
+
+
+  /* HEADER LEAVE */
+
+  siteHeader.addEventListener(
+    'pointerleave',
+    () => {
+
+      closeMenus();
 
     }
   );
 
 
 
-  /* OVERLAY CLICK CLOSE */
+  /*  OVERLAY CLICK  */
 
   overlay.addEventListener(
     'click',
-    closeAllDropdowns
+    () => {
+
+      closeMenus();
+
+    }
+  );
+
+
+
+  /* RESIZE */
+
+  window.addEventListener(
+    'resize',
+    updateOverlaySize
   );
 
 }

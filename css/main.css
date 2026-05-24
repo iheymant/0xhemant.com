@@ -19,6 +19,11 @@
 @import './components/builds-content-overview.css';
 @import './components/builds-section-cards.css';
 @import './components/builds-empty-state.css';
+@import './components/nav-links.css';
+@import './components/desktop-nav.css';
+@import './components/mega-menu.css';
+@import './components/mobile-panels.css';
+@import './components/mobile-menu-links-utilities.css';
 
 /* pages */
 @import './pages/home.css';

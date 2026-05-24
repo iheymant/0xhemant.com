@@ -5,10 +5,14 @@ export function setupMobileMenu() {
       '.ham-menu'
     );
 
+
+
   const mobileMenu =
     document.querySelector(
       '.mobile-menu'
     );
+
+
 
   const panels =
     document.querySelectorAll(
@@ -17,7 +21,32 @@ export function setupMobileMenu() {
 
 
 
-  if (!hamMenu || !mobileMenu) {
+  const submenuTriggers =
+    document.querySelectorAll(
+      '.submenu-trigger'
+    );
+
+
+
+  const backButtons =
+    document.querySelectorAll(
+      '.back-button'
+    );
+
+
+
+  const mainPanel =
+    document.querySelector(
+      '#main-panel'
+    );
+
+
+
+  if (
+    !hamMenu ||
+    !mobileMenu ||
+    !mainPanel
+  ) {
 
     return;
 
@@ -26,38 +55,64 @@ export function setupMobileMenu() {
 
 
   /* =========================
-     OPEN / CLOSE MENU
+     PANEL STACK
   ========================= */
 
-  function openMenu() {
+  const panelStack = [
+    mainPanel
+  ];
 
-    mobileMenu.classList.add(
+
+
+  /* =========================
+     RESET PANELS
+  ========================= */
+
+  function resetPanels() {
+  panels.forEach(panel => {
+    panel.classList.remove('active', 'panel-behind');
+  });
+  mainPanel.classList.add('active');
+  panelStack.length = 0;
+  panelStack.push(mainPanel);
+  delete mobileMenu.dataset.depth; // ← clear depth on reset
+}
+
+
+
+  /* =========================
+     OPEN MENU
+  ========================= */
+
+function openMenu() {
+  mobileMenu.classList.add('active');
+  hamMenu.classList.add('active');
+  document.body.classList.add('mobile-menu-open');
+  resetPanels();
+  // ← remove the panelId reference that doesn't exist here
+}
+
+
+
+  /* CLOSE MENU  */
+
+ function closeMenu() {
+
+  mobileMenu.classList.remove(
       'active'
     );
 
-    hamMenu.classList.add(
+
+
+  hamMenu.classList.remove(
       'active'
     );
 
-    document.body.style.overflow =
-      'hidden';
-
-  }
 
 
-
-  function closeMenu() {
-
-    mobileMenu.classList.remove(
-      'active'
+    document.body.classList.remove(
+      'mobile-menu-open'
     );
-
-    hamMenu.classList.remove(
-      'active'
-    );
-
-    document.body.style.overflow =
-      '';
 
 
 
@@ -68,77 +123,49 @@ export function setupMobileMenu() {
 
 
   /* =========================
-     RESET PANELS
+     OPEN PANEL
   ========================= */
 
-  function resetPanels() {
+function openPanel(panelId) {
+  const currentPanel = panelStack[panelStack.length - 1];
+  const targetPanel = document.querySelector(`#${panelId}`);
+  if (!targetPanel) return;
 
-    panels.forEach(panel => {
+  currentPanel.classList.add('panel-behind');
+  targetPanel.classList.add('active');
 
-      panel.classList.remove(
-        'active'
-      );
+  // ← Set depth on the container
+  mobileMenu.dataset.depth = panelStack.length; // depth 1, 2, 3...
 
-    });
-
-
-
-    const mainPanel =
-      document.querySelector(
-        '#main-panel'
-      );
-
-
-
-    if (mainPanel) {
-
-      mainPanel.classList.add(
-        'active'
-      );
-
-    }
-
-  }
+  panelStack.push(targetPanel);
+}
 
 
 
   /* =========================
-     OPEN SPECIFIC PANEL
+     GO BACK
   ========================= */
 
-  function openPanel(panelId) {
+  function goBack() {
+  if (panelStack.length <= 1) return;
 
-    panels.forEach(panel => {
+  const currentPanel = panelStack.pop();
+  currentPanel.classList.remove('active');
 
-      panel.classList.remove(
-        'active'
-      );
+  const previousPanel = panelStack[panelStack.length - 1];
+  previousPanel.classList.remove('panel-behind');
 
-    });
-
-
-
-    const targetPanel =
-      document.querySelector(
-        `#${panelId}`
-      );
-
-
-
-    if (targetPanel) {
-
-      targetPanel.classList.add(
-        'active'
-      );
-
-    }
-
+  // ← Update depth
+  mobileMenu.dataset.depth = panelStack.length - 1;
+  if (panelStack.length === 1) {
+    delete mobileMenu.dataset.depth;
   }
+}
 
 
 
   /* =========================
-     HAMBURGER TOGGLE
+     HAMBURGER
   ========================= */
 
   hamMenu.addEventListener(
@@ -168,25 +195,18 @@ export function setupMobileMenu() {
      SUBMENU TRIGGERS
   ========================= */
 
-  const submenuTriggers =
-    document.querySelectorAll(
-      '.submenu-trigger'
-    );
-
-
-
   submenuTriggers.forEach(trigger => {
 
     trigger.addEventListener(
       'click',
       () => {
 
-        const target =
-          trigger.dataset.target;
+        const panelId =
+          trigger.dataset.panel;
 
-        openPanel(
-          `${target}-panel`
-        );
+
+
+        openPanel(panelId);
 
       }
     );
@@ -199,24 +219,11 @@ export function setupMobileMenu() {
      BACK BUTTONS
   ========================= */
 
-  const backButtons =
-    document.querySelectorAll(
-      '.back-button'
-    );
-
-
-
   backButtons.forEach(button => {
 
     button.addEventListener(
       'click',
-      () => {
-
-        openPanel(
-          'main-panel'
-        );
-
-      }
+      goBack
     );
 
   });
@@ -231,7 +238,9 @@ export function setupMobileMenu() {
     'resize',
     () => {
 
-      if (window.innerWidth >= 768) {
+      if (
+        window.innerWidth >= 768
+      ) {
 
         closeMenu();
 

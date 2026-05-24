@@ -16,9 +16,7 @@
   padding-inline: clamp(1rem, 4vw, 2rem);
 }
 
-/* =========================================
-   EMPTY CONTENT
-========================================= */
+/*  EMPTY CONTENT  */
 
 .empty-builds-content {
   display: flex;
@@ -32,9 +30,7 @@
   text-align: center;
 }
 
-/* =========================================
-   IMAGE
-========================================= */
+/* IMAGE  */
 
 .empty-builds-image {
   width: min(100%, 420px);
@@ -49,9 +45,7 @@
   pointer-events: none;
 }
 
-/* =========================================
-   TITLE
-========================================= */
+/* TITLE */
 
 .empty-builds-title {
   margin: 0 0 var(--space-sm);
@@ -64,9 +58,7 @@
   color: var(--text);
 }
 
-/* =========================================
-   DESCRIPTION
-========================================= */
+/*  DESCRIPTION */
 
 .empty-builds-description {
   margin: 0;

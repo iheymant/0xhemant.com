@@ -10,36 +10,37 @@ import {
 
 export function renderMobileMenu() {
 
-  return `
+  return`
 
-    <div class="mobile-menu">
+  <div class="mobile-menu">
 
-      <div class="mobile-panels">
+    <div class="mobile-panels">
 
 
-        <!-- MAIN PANEL -->
+      <!-- MAIN PANEL -->
 
-        <div
-          class="
-            mobile-panel
-            active
+      <div
+        class="
+          mobile-panel
+          mobile-root-panel
+         active
           "
-          id="main-panel"
-        >
+        id="main-panel"
+      >
 
-          ${renderMobileMainLinks()}
-
-        </div>
-
-
-        <!-- SUBMENUS -->
-
-        ${renderMobileSubmenus()}
+        ${renderMobileMainLinks()}
 
       </div>
 
+
+      <!-- SUBMENUS -->
+
+      ${renderMobileSubmenus()}
+
     </div>
 
-  `;
+  </div>
+
+    `;
 
 }

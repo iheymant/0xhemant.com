@@ -10,7 +10,22 @@ export function renderDropdownMenu( link ) {
           class="dropdown-card"
         >
 
-          ${child.name}
+          <span class="
+            dropdown-card-title
+          ">
+
+            ${child.name}
+
+          </span>
+
+
+          <span class="
+            dropdown-card-description
+          ">
+
+            ${child.description}
+
+          </span>
 
         </a>
 
@@ -22,9 +37,52 @@ export function renderDropdownMenu( link ) {
 
   return `
 
-    <div class="dropdown-menu">
+    <div
+      class="mega-menu"
+      id="${link.id}"
+    >
 
-      ${childrenHTML}
+      <div class="container">
+
+        <div class="dropdown-content">
+
+
+          <!-- HEADER -->
+
+          <div class="dropdown-header">
+
+            <p class="
+              dropdown-category-text
+            ">
+
+              ${link.dropdownCategoryText}
+
+            </p>
+
+
+            <p class="
+              dropdown-category-description
+            ">
+
+              ${link.dropdownCategoryTextDescription}
+
+            </p>
+
+          </div>
+
+
+
+          <!-- GRID -->
+
+          <div class="dropdown-grid">
+
+            ${childrenHTML}
+
+          </div>
+
+        </div>
+
+      </div>
 
     </div>
 

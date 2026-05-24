@@ -17,7 +17,7 @@ export function renderMobileMainLinks() {
 
             <button
               class="submenu-trigger"
-              data-target="${link.id}"
+              data-panel="${link.id}-panel""
             >
 
               <span>
