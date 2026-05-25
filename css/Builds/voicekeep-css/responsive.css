@@ -3,7 +3,6 @@
 /* TABLET */
 
 @media (max-width: 768px) {
-
   .legal-page-section {
     padding: 4rem 0;
   }
@@ -28,13 +27,11 @@
     font-size: var(--text-base);
     line-height: 1.75;
   }
-
 }
 
 /* MOBILE */
 
 @media (max-width: 480px) {
-
   .legal-page-section .container {
     padding-inline: var(--padding);
   }
@@ -60,5 +57,4 @@
     font-size: var(--text-sm);
     line-height: 1.8;
   }
-
 }

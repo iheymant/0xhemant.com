@@ -57,12 +57,9 @@ nav {
   font-weight: 500; */
 /* } */
 
-
 /* New styles */
 
-
 .site-header {
-
   position: fixed;
 
   top: 0;
@@ -80,25 +77,18 @@ nav {
 
   background: var(--bg);
 
-  backdrop-filter:
-    blur(1px);
+  backdrop-filter: blur(1px);
 
   max-height: 60px;
 
-  transition:
-    max-height .5s cubic-bezier(0.16, 1 , 0.3, 1);
-
+  transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .site-header.dropdown-active {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
 
-  box-shadow:
-    0 12px 40px rgba(0,0,0,0.08);
-
-   max-height: 520px;
-
+  max-height: 520px;
 }
-
 
 /* .site-header.scrolled {}
 
@@ -113,6 +103,4 @@ nav {
   user-select: none;
   text-decoration: none;
   flex-shrink: 0;
-  
 }
-

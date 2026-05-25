@@ -1,8 +1,6 @@
-export function renderDropdownMenu( link ) {
-
-  const childrenHTML =
-    link.children.map(child => {
-
+export function renderDropdownMenu(link) {
+  const childrenHTML = link.children
+    .map((child) => {
       return `
 
         <a
@@ -30,10 +28,8 @@ export function renderDropdownMenu( link ) {
         </a>
 
       `;
-
-    }).join('');
-
-
+    })
+    .join("");
 
   return `
 
@@ -87,5 +83,4 @@ export function renderDropdownMenu( link ) {
     </div>
 
   `;
-
 }

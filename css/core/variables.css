@@ -49,9 +49,7 @@
   --border-width: 1px;
 
   /* TYPOGRAPHY */
-  --font-family:
-    "SF Pro Text", "Helvetica Neue", Arial,
-    sans-serif;
+  --font-family: "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
 
   --text-xs: 0.8rem;
   --text-sm: 0.9rem;
@@ -68,8 +66,7 @@
   --transition-slow: 0.5s ease;
   --transition-hover: 0.35s;
   --transition-dropdown: 0.75s;
-  --ease-premium:
-    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
 
   /* BLUR */
   --blur: blur(20px);

@@ -1,7 +1,6 @@
-import { renderDropdownMenu } from './renderDropdownMenu.js';
+import { renderDropdownMenu } from "./renderDropdownMenu.js";
 
 export function renderDropdownTrigger(link) {
-
   return `
 
     <li class="dropdown-wrapper">
@@ -19,5 +18,4 @@ export function renderDropdownTrigger(link) {
     </li>
 
   `;
-
 }

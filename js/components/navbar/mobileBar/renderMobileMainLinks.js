@@ -1,16 +1,9 @@
-import {
-  navbarData
-} from '/data/navbarData.js';
-
-
+import { navbarData } from "/data/navbarData.js";
 
 export function renderMobileMainLinks() {
-
-  const linksHTML =
-    navbarData.map(link => {
-
+  const linksHTML = navbarData
+    .map((link) => {
       if (link.dropdown) {
-
         return `
 
           <li>
@@ -38,10 +31,7 @@ export function renderMobileMainLinks() {
           </li>
 
         `;
-
       }
-
-
 
       return `
 
@@ -59,10 +49,8 @@ export function renderMobileMainLinks() {
         </li>
 
       `;
-
-    }).join('');
-
-
+    })
+    .join("");
 
   return `
 
@@ -73,5 +61,4 @@ export function renderMobileMainLinks() {
     </ul>
 
   `;
-
 }

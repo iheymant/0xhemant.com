@@ -1,5 +1,4 @@
 .mobile-panels {
-
   position: relative;
 
   width: 100%;
@@ -9,11 +8,9 @@
   overflow: hidden;
 
   padding-top: 7rem;
-
 }
 
 .mobile-panel {
-
   position: absolute;
 
   inset: 0;
@@ -24,14 +21,11 @@
 
   background: var(--bg);
 
-  padding:
-    7rem 2rem 2rem;
+  padding: 7rem 2rem 2rem;
 
   overflow-y: auto;
 
-  will-change:
-    transform,
-    opacity;
+  will-change: transform, opacity;
 
   visibility: hidden;
 
@@ -41,113 +35,62 @@
 
   backface-visibility: hidden;
 
-  transform:
-    translate3d(100%, 0, 0)
-    scale(0.985);
+  transform: translate3d(100%, 0, 0) scale(0.985);
 
   transition:
-    transform 0.72s
-    cubic-bezier(
-      0.16,
-      1,
-      0.3,
-      1
-    ),
+    transform 0.72s cubic-bezier(0.16, 1, 0.3, 1),
     opacity 0.38s ease,
-    filter 0.72s
-    cubic-bezier(
-      0.16,
-      1,
-      0.3,
-      1);
-
+    filter 0.72s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .mobile-panel.active {
-
   visibility: visible;
 
   opacity: 1;
 
   pointer-events: auto;
 
-  transform:
-    translate3d(
-      5%,
-      0,
-      0
-    )
-    scale(1);
-
+  transform: translate3d(5%, 0, 0) scale(1);
 }
 
-.mobile-menu[data-active-panel]
-#main-panel {
-
-  transform:
-    translate3d(
-      -18%,
-      0,
-      0
-    )
-    scale(0.985);
+.mobile-menu[data-active-panel] #main-panel {
+  transform: translate3d(-18%, 0, 0) scale(0.985);
 
   opacity: 0.52;
-
 }
 
-
 .mobile-submenu-link {
-
   opacity: 0;
 
-  transform:
-    translateY(10px);
-
+  transform: translateY(10px);
 }
 
 .mobile-panel.active .mobile-submenu-link {
-
   opacity: 1;
 
-  transform:
-    translateY(0);
-
+  transform: translateY(0);
 }
 
 .mobile-panel.panel-behind {
   visibility: visible;
-  opacity: 0.48; 
+  opacity: 0.48;
   pointer-events: none;
-  transform: translate3d(-30%, 0, 0) scale(0.985); 
-  filter: blur(0.5px); 
+  transform: translate3d(-30%, 0, 0) scale(0.985);
+  filter: blur(0.5px);
 }
 
 .mobile-sub-panel {
-
-  transform:
-    translate3d(
-      100%,
-      0,
-      0
-    );
-
+  transform: translate3d(100%, 0, 0);
 }
 
 .mobile-sub-panel.active {
-
-  transform:
-    translate3d(15%, 5%, 0);
-
+  transform: translate3d(15%, 5%, 0);
 }
 
 .mobile-root-panel {
-
-  transform:
-    translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 
   opacity: 1;
-
 }
 
 .mobile-root-panel.active {
@@ -160,8 +103,7 @@
   transition:
     opacity 0.45s ease,
     transform 0.72s cubic-bezier(0.16, 1, 0.3, 1);
-  margin-bottom:
-    2rem;
+  margin-bottom: 2rem;
 }
 
 .mobile-panel.active .mobile-panel-header {
@@ -179,9 +121,7 @@
   letter-spacing: -0.02em;
 }
 
-
 .mobile-sub-panel-category-description {
-
   font-size: var(--text-md);
 
   margin-top: 0.4rem;
@@ -191,6 +131,4 @@
   color: var(--text-secondary);
 
   opacity: 0.82;
-
 }
-

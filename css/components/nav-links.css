@@ -1,24 +1,19 @@
 .nav-links {
-
   list-style: none;
 
   display: flex;
 
   align-items: center;
 
-
   gap: var(--space-nav);
 
   color: var(--text-secondary);
 
   margin-left: auto;
-  
 }
-
 
 .nav-link,
 .dropdown-trigger {
-
   text-decoration: none;
 
   color: var(--text-secondary);
@@ -32,16 +27,12 @@
   font-size: var(--size-xs);
 
   font-weight: 300;
-
-
 }
 
- .nav-link.active-link,
+.nav-link.active-link,
 .dropdown-trigger.active-link {
-
   color: var(--primary);
-} 
-
+}
 
 .nav-links li a {
   text-decoration: none;
@@ -62,11 +53,3 @@
   opacity: var(--opacity);
   user-select: none;
 }
-
-
-
-
-
-
-
-

@@ -1,16 +1,9 @@
-import {
-  renderMobileMainLinks
-} from './renderMobileMainLinks.js';
+import { renderMobileMainLinks } from "./renderMobileMainLinks.js";
 
-import {
-  renderMobileSubmenus
-} from './renderMobileSubmenus.js';
-
-
+import { renderMobileSubmenus } from "./renderMobileSubmenus.js";
 
 export function renderMobileMenu() {
-
-  return`
+  return `
 
   <div class="mobile-menu">
 
@@ -42,5 +35,4 @@ export function renderMobileMenu() {
   </div>
 
     `;
-
 }

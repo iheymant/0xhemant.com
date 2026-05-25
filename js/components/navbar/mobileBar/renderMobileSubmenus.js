@@ -1,20 +1,13 @@
-import {
-  navbarData
-} from '/data/navbarData.js';
-
-
+import { navbarData } from "/data/navbarData.js";
 
 export function renderMobileSubmenus() {
-
   return navbarData
 
-    .filter(link => link.dropdown)
+    .filter((link) => link.dropdown)
 
-    .map(link => {
-
-      const childrenHTML =
-        link.children.map(child => {
-
+    .map((link) => {
+      const childrenHTML = link.children
+        .map((child) => {
           return `
 
             <li>
@@ -31,10 +24,8 @@ export function renderMobileSubmenus() {
             </li>
 
           `;
-
-        }).join('');
-
-
+        })
+        .join("");
 
       return `
 
@@ -97,7 +88,6 @@ export function renderMobileSubmenus() {
       </div>
 
         `;
-
-    }).join('');
-
+    })
+    .join("");
 }

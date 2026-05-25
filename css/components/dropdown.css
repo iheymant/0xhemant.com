@@ -182,7 +182,7 @@
 
  */
 
- /* New Styles */
+/* New Styles */
 
 .dropdown-content {
   width: 100%;
@@ -201,7 +201,6 @@
 }
 
 .dropdown-header {
-
   display: flex;
 
   flex-direction: column;
@@ -209,48 +208,36 @@
   align-items: start;
 
   justify-content: flex-end;
-  
+
   margin-bottom: 2rem;
 
   opacity: 0;
 
-  transform:
-    translateY(8px);
+  transform: translateY(8px);
 
   transition:
     opacity 0.3s ease 0.08s,
     transform 0.4s ease 0.08s;
-
-  
 }
 
-.mega-menu.active
-.dropdown-header {
-
+.mega-menu.active .dropdown-header {
   opacity: 1;
 
-  transform:
-    translateY(0);
-
+  transform: translateY(0);
 }
 
-
 .dropdown-category-text {
-
   font-size: var(--text-md);
 
   opacity: var(--opacity-hover);
-
 }
 
 .dropdown-grid {
   display: grid;
 
-  grid-template-columns:
-    repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 
   gap: 1rem;
-
 }
 
 .dropdown-card {
@@ -259,8 +246,7 @@
 
   gap: 0.5rem;
 
-  padding:
-    var(--space-md);
+  padding: var(--space-md);
 
   border-radius: var(--radius-lg);
   opacity: var(--opacity);
@@ -268,11 +254,10 @@
   text-decoration: none;
 
   color: var(--text);
-  
+
   opacity: 0;
 
-  transform:
-    translateY(7px);
+  transform: translateY(7px);
 
   transition:
     opacity 0.35s ease,
@@ -292,22 +277,17 @@
 }
 
 .mega-menu.active .dropdown-card {
-
   opacity: 1;
 }
 .dropdown-card:hover {
   transform: translateY(-3px);
 
-  
-  background:
-    rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.45);
 
-  border-color:
-    rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.16);
 
   opacity: var(--opacity-hover);
 }
-
 
 .dropdown-card-title {
   font-size: var(--text-md);
@@ -316,10 +296,7 @@
   opacity: var(--opacity);
 
   color: var(--text);
-
-
 }
-
 
 .dropdown-card-description {
   font-size: var(--text-sm);
@@ -328,4 +305,3 @@
 
   color: var(--text-secondary);
 }
-

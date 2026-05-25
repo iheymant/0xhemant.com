@@ -1,9 +1,6 @@
-
 import { renderNavLinks } from "./renderNavlinks.js";
 
-
 export function renderDesktopNav() {
-
   return `
 
     <nav class="desktop-nav">
@@ -28,6 +25,4 @@ export function renderDesktopNav() {
 
 
   `;
-
 }
-

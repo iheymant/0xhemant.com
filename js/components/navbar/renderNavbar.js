@@ -1,11 +1,10 @@
-import { renderDesktopNav } from './renderDesktopNav.js';
+import { renderDesktopNav } from "./deskBar/renderDesktopNav.js";
 
-import { renderMobileMenu } from './renderMobileMenu.js';
+import { renderMobileMenu } from "./mobileBar/renderMobileMenu.js";
 
-import { renderMegaMenus } from './renderMegaMenus.js';
+import { renderMegaMenus } from "./deskBar/renderMegaMenus.js";
 
 export function renderNavbar() {
-
   return `
 
     <header class="site-header">
@@ -36,5 +35,4 @@ export function renderNavbar() {
       
 
   `;
-
 }

@@ -1,30 +1,27 @@
 import { footerData } from "/data/footerData.js";
 
 export function loadFooter() {
+  const footerElement = document.querySelector("#footer");
 
-  const footerElement = document.querySelector('#footer');
+  const footerSections = footerData
+    .map((sectionObj) => {
+      const linksHTML = sectionObj.links
+        .map((link) => {
+          const target = link.external
+            ? 'target="_blank" rel="noopener noreferrer"'
+            : "";
 
-  const footerSections = footerData.map(sectionObj => {
-
-    const linksHTML = sectionObj.links.map(link => {
-
-      const target = link.external
-        ? 'target="_blank" rel="noopener noreferrer"'
-        : '';
-
-      return `
+          return `
         <li>
           <a href="${link.url}" ${target} class="footer-link">
             ${link.name}
           </a>
         </li>
       `;
+        })
+        .join("");
 
-    }).join('');
-
-
-
-    return `
+      return `
 
       <div class="footer-column">
 
@@ -41,10 +38,8 @@ export function loadFooter() {
       </div>
 
     `;
-
-  }).join('');
-
-
+    })
+    .join("");
 
   footerElement.innerHTML = `
 
@@ -113,6 +108,4 @@ export function loadFooter() {
     </footer>
 
   `;
-
-
 }
