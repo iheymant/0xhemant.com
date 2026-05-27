@@ -47,13 +47,17 @@ export function renderDropdownMenu(link) {
 
           <div class="dropdown-header">
 
-            <p class="
-              dropdown-category-text
+           <span class="dropdown-eyebrow" >
+              Explore
+            </span>
+
+            <h2 class="
+              dropdown-category-title
             ">
 
               ${link.dropdownCategoryText}
 
-            </p>
+            </h2>
 
 
             <p class="

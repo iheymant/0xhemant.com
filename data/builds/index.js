@@ -17,7 +17,6 @@ export const buildsProjectsData = [
     links: {
       install: 'https://instagram.com/0xhemant',
       privacy: 'http://127.0.0.1:5500/builds/voicekeep/privacy',
-      Catelog: 'https://instagram.com/0xhemant',
     },
     seo: {
       title:
@@ -53,18 +52,6 @@ export const buildsProjectsData = [
 
       privacy:
         '/builds/voicekeep/privacy/',
-
-      tutorial:
-        '/builds/voicekeep/tutorial/',
-
-      changelog:
-        '/builds/voicekeep/changelog/',
-
-      faq:
-        '/builds/voicekeep/faq/',
-
-      status:
-        '/builds/voicekeep/status/'
     },
 
   },

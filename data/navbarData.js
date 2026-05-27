@@ -17,7 +17,7 @@ export const navbarData = [
     external: false,
     dropdown: true,
     dropdownCategoryText: "Inside Builds",
-    dropdownCategoryTextDescription: "explore different stages",
+    dropdownCategoryTextDescription: "Experience different stages",
     children: [
       {
         name: "Conceptual",

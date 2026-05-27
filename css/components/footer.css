@@ -6,7 +6,7 @@ footer {
 
 .footer-container {
   width: 90%;
-  max-width: 1100px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 
@@ -74,4 +74,4 @@ footer {
   color: var(--primary);
   user-select: none;
   text-decoration: none;
-}
+} 

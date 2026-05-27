@@ -23,7 +23,7 @@ export function renderVoicekeep() {
 
   app.innerHTML = `
 
-    <main class= 'build-page voiceKeep-page'>
+    <main class= 'build-page voicekeep-page'>
 
      ${renderHero(voicekeepObj)}
 
