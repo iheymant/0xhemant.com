@@ -1,6 +1,6 @@
 import { navbarData } from "/data/navbarData.js";
 
-import { renderNavLink } from "/js/components/navbar/deskBar/renderNavLink.js";
+import { renderNavLink } from "/js/components/navbar/deskBar/renderNavlink.js";
 
 import { renderDropdownTrigger } from "/js/components/navbar/deskBar/renderDropdownTrigger.js";
 
