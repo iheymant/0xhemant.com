@@ -1,34 +1,34 @@
 /* core */
-@import "./core/reset.css";
-@import "./core/variables.css";
-@import "./core/typography.css";
-@import "./core/layout.css";
-@import "./core/utilities.css";
+@import "/css/core/reset.css";
+@import "/css/core/variables.css";
+@import "/css/core/typography.css";
+@import "/css/core/layout.css";
+@import "/css/core/utilities.css";
 
 /* components */
-@import "./components/navbar.css";
-@import "./components/footer.css";
-@import "./components/buttons.css";
-@import "./components/mobile-menu.css";
-@import "./components/ham-menu.css";
-@import "./components/overlay.css";
-@import "./components/dropdown.css";
-@import "./components/builds-meta-card.css";
-@import "./components/builds-hero.css";
-@import "./components/builds-links.css";
-@import "./components/builds-content-overview.css";
-@import "./components/builds-section-cards.css";
-@import "./components/builds-empty-state.css";
-@import "./components/nav-links.css";
-@import "./components/desktop-nav.css";
-@import "./components/mega-menu.css";
-@import "./components/mobile-panels.css";
-@import "./components/mobile-menu-links-utilities.css";
+@import "/css/components/navbar.css";
+@import "/css/components/footer.css";
+@import "/css/components/buttons.css";
+@import "/css/components/mobile-menu.css";
+@import "/css/components/ham-menu.css";
+@import "/css/components/overlay.css";
+@import "/css/components/dropdown.css";
+@import "/css/components/builds-meta-card.css";
+@import "/css/components/builds-hero.css";
+@import "/css/components/builds-links.css";
+@import "/css/components/builds-content-overview.css";
+@import "/css/components/builds-section-cards.css";
+@import "/css/components/builds-empty-state.css";
+@import "/css/components/nav-links.css";
+@import "/css/components/desktop-nav.css";
+@import "/css/components/mega-menu.css";
+@import "/css/components/mobile-panels.css";
+@import "/css/components/mobile-menu-links-utilities.css";
 
 /* pages */
-@import "./pages/home.css";
-@import "./pages/builds.css";
-@import "./pages/thoughts.css";
+@import "/css/pages/home.css";
+@import "/css/pages/builds.css";
+@import "/css/pages/thoughts.css";
 
 /* responsiveness */
-@import "./core/responsiveness.css";
+@import "/css/core/responsiveness.css";

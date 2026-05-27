@@ -1,8 +1,8 @@
-import { renderDesktopNav } from "./deskBar/renderDesktopNav.js";
+import { renderDesktopNav } from "/js/components/navbar/deskBar/renderDesktopNav.js";
 
-import { renderMobileMenu } from "./mobileBar/renderMobileMenu.js";
+import { renderMobileMenu } from "/js/components/navbar/mobileBar/renderMobileMenu.js";
 
-import { renderMegaMenus } from "./deskBar/renderMegaMenus.js";
+import { renderMegaMenus } from "/js/components/navbar/deskBar/renderMegaMenus.js";
 
 export function renderNavbar() {
   return `

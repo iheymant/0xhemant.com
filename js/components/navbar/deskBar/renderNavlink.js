@@ -1,4 +1,4 @@
-import { createLinkTarget } from "../utils/createLinkTarget.js";
+import { createLinkTarget } from "/js/components/navbar/utils/createLinkTarget.js";
 
 export function renderNavLink(link) {
   const target = createLinkTarget(link.external);

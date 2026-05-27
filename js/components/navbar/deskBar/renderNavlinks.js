@@ -1,8 +1,8 @@
 import { navbarData } from "/data/navbarData.js";
 
-import { renderNavLink } from "./renderNavLink.js";
+import { renderNavLink } from "/js/components/navbar/deskBar/renderNavLink.js";
 
-import { renderDropdownTrigger } from "./renderDropdownTrigger.js";
+import { renderDropdownTrigger } from "/js/components/navbar/deskBar/renderDropdownTrigger.js";
 
 export function renderNavLinks() {
   return navbarData

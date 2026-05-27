@@ -15,8 +15,8 @@ export const buildsProjectsData = [
     featured: true,
     description: 'Capture and save live meeting captions from Online Meetings with speaker tracking and conversational flow.',
     links: {
-      install: 'https://instagram.com/0xhemant',
-      privacy: 'http://127.0.0.1:5500/builds/voicekeep/privacy',
+      install: '/builds/voicekeep',
+      privacy: '/builds/voicekeep/privacy',
     },
     seo: {
       title:

@@ -1,6 +1,6 @@
 import { navbarData } from "/data/navbarData.js";
 
-import { renderDropdownMenu } from "./renderDropdownMenu.js";
+import { renderDropdownMenu } from "/js/components/navbar/deskBar/renderDropdownMenu.js";
 
 export function renderMegaMenus() {
   return navbarData

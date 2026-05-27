@@ -1,4 +1,4 @@
-import { renderDropdownMenu } from "./renderDropdownMenu.js";
+import { renderDropdownMenu } from "/js/components/navbar/deskBar/renderDropdownMenu.js";
 
 export function renderDropdownTrigger(link) {
   return `

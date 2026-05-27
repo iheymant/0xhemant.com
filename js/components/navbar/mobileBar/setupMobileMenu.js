@@ -1,5 +1,5 @@
 const submenuSections = ["builds"];
-import { setActiveLink } from "../utils/setActiveLink.js";
+import { setActiveLink } from "/js/components/navbar/utils/setActiveLink.js";
 
 export function setupMobileMenu() {
   const hamMenu = document.querySelector(".ham-menu");

@@ -1,4 +1,4 @@
-import { renderNavLinks } from "./renderNavlinks.js";
+import { renderNavLinks } from "/js/components/navbar/deskBar/renderNavlinks.js";
 
 export function renderDesktopNav() {
   return `
