@@ -1,5 +1,5 @@
 import { voicekeepPrivacyContent } from "/data/builds/voicekeep/privacy.js";
-import { renderPrivacy } from "/js/components/builds/voicekeep/renderPrivacy.js";
+import { renderPrivacy } from "/js/components/builds/voicekeep/render-privacy.js";
 
 export function renderVoicekeepPrivacy() {
 

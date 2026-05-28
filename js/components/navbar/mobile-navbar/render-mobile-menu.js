@@ -1,6 +1,6 @@
-import { renderMobileMainLinks } from "/js/components/navbar/mobileBar/renderMobileMainLinks.js";
+import { renderMobileMainLinks } from "/js/components/navbar/mobile-navbar/render-mobile-main-links.js";
 
-import { renderMobileSubmenus } from "/js/components/navbar/mobileBar/renderMobileSubmenus.js";
+import { renderMobileSubmenus } from "/js/components/navbar/mobile-navbar/render-mobile-submenus.js";
 
 export function renderMobileMenu() {
   return `

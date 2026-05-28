@@ -1,4 +1,4 @@
-import { footerData } from "/data/footerData.js";
+import { footerData } from "/data/footer-data.js";
 
 export function loadFooter() {
   const footerElement = document.querySelector("#footer");

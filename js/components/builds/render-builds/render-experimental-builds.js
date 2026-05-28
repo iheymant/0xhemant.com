@@ -1,4 +1,4 @@
-import { renderBuildSection  } from '/js/components/builds/renderBuilds/renderBuildsSection.js';
+import { renderBuildSection  } from '/js/components/builds/render-builds/render-builds-section.js';
 
 export function renderExperimentalBuilds(){
 

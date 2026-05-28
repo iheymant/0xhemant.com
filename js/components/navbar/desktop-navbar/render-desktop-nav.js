@@ -1,4 +1,4 @@
-import { renderNavLinks } from "/js/components/navbar/deskBar/renderNavlinks.js";
+import { checkNavlinksType } from "/js/components/navbar/desktop-navbar/check-navlinks-type.js";
 
 export function renderDesktopNav() {
   return `
@@ -14,7 +14,7 @@ export function renderDesktopNav() {
 
       <ul class="nav-links">
 
-        ${renderNavLinks()}
+        ${checkNavlinksType()}
 
       </ul>
 
