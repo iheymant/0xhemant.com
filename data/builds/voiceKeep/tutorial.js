@@ -1,4 +1,4 @@
-export const voiceKeepTutorialSteps = [
+export const voicekeepTutorialSteps = [
 
   {
     title: 'Install Extension',

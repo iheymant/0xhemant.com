@@ -12,7 +12,7 @@ export function renderVoicekeep() {
     project.id === 'voicekeep'
     );
 
-  const voicekeepContent = buildsContents.voiceKeep;
+  const voicekeepContent = buildsContents.voicekeep;
 
   if (!voicekeepObj || voicekeepObj.visibility !== 'public'){
     return;

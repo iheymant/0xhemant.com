@@ -1,4 +1,4 @@
-export const VoiceKeepChangelog = [
+export const voicekeepChangelog = [
 
   {
     version: '0.1.0',
