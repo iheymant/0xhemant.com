@@ -37,7 +37,7 @@ export function renderHero() {
 
     </div>
 
-    <a class = "home-hero-builds-redirect-button" href= "${exploreButtonHref}"> 
+    <a class = "home-hero-builds-redirect-button btn btn-primary" href= "${exploreButtonHref}"> 
 
      ${exploreButton}
      

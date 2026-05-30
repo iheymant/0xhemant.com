@@ -22,7 +22,7 @@ export function renderFeaturedBuild() {
       <p class="featured-build-tagline">${featuredBuildTagline}</p>
       <div class="featured-build-status">${featuredBuildTagStatus}</div>
       <a
-        class="featured-build-redirect-button"
+        class="featured-build-redirect-button btn btn-primary"
         href="${featuredBuildRedirectButtonUrl}"
       >
         View Build
