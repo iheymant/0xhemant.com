@@ -1,0 +1,38 @@
+#error-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  text-align: center;
+}
+
+
+.error-heading {
+  font-size: var(--text-xxl);
+  font-weight: 700;
+}
+
+.error-link-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-self: center;
+  justify-self: center;
+}
+.home-link-redirect-btn {
+  margin-top: 0.5rem;
+  padding:
+    0.2rem
+    0.2rem;
+  background-color: var(--primary);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color var(--transition-fast);
+}
+
+.error-description {
+  margin-top: 1rem;
+  color: var(--text-secondary);
+}

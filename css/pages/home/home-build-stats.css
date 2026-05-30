@@ -1,0 +1,21 @@
+.home-stats-container {
+
+  display: flex;
+
+  gap: 2rem;
+
+}
+
+.home-stat-count {
+
+  font-size: 1.5rem;
+
+  font-weight: 700;
+
+}
+
+.home-stat-label {
+
+  opacity: .7;
+
+}

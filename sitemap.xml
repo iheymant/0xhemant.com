@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://0xhemant.com/</loc>
+  </url>
+
+  <url>
+    <loc>https://0xhemant.com/builds/</loc>
+  </url>
+
+  <url>
+    <loc>https://0xhemant.com/builds/live/</loc>
+  </url>
+
+  <url>
+    <loc>https://0xhemant.com/builds/experimental/</loc>
+  </url>
+
+  <url>
+    <loc>https://0xhemant.com/builds/conceptual/</loc>
+  </url>
+
+  <url>
+    <loc>https://0xhemant.com/builds/voicekeep/</loc>
+  </url>
+
+  <url>
+    <loc>
+      https://0xhemant.com/builds/voicekeep/privacy/
+    </loc>
+  </url>
+
+</urlset>

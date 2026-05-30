@@ -31,6 +31,7 @@
 @import "/css/pages/thoughts.css";
 @import "/css/pages/home/home-hero.css";
 @import "/css/pages/home/featured-build.css";
+@import "/css/pages/home/home-build-stats.css";
 
 /* responsiveness */
 @import "/css/core/responsiveness.css";

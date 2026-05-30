@@ -18,8 +18,8 @@ export function renderFeaturedBuild() {
     <div class="featured-build-container-content">
       <div class="featured-container-heading">Now Building</div>
       <img class="featured-build-image" src=${featuredBuildImageSrc} alt = ${featuredBuildImageAltText}>
-      <div class="featured-build-name">${featuredBuildName}</div>
-      <div class="featured-build-tagline">${featuredBuildTagline}</div>
+      <h2 class="featured-build-name">${featuredBuildName}</h2>
+      <p class="featured-build-tagline">${featuredBuildTagline}</p>
       <div class="featured-build-status">${featuredBuildTagStatus}</div>
       <a
         class="featured-build-redirect-button"

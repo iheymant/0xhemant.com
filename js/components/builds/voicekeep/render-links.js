@@ -26,7 +26,7 @@ export function renderLinks(project) {
 
   return `
 
-    <section class="build-links">
+    <section class="build-links container">
 
       <div class="container">
 
