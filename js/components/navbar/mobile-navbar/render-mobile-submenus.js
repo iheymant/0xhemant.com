@@ -1,4 +1,4 @@
-import { navbarData } from "/data/navbar-data.js";
+import { navbarData } from "/data/navigation/navbar-data.js";
 
 export function renderMobileSubmenus() {
   return navbarData

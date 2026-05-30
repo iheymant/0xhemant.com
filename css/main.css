@@ -26,9 +26,11 @@
 @import "/css/components/mobile-menu-links-utilities.css";
 
 /* pages */
-@import "/css/pages/home.css";
+@import "/css/pages/home/home.css";
 @import "/css/pages/builds.css";
 @import "/css/pages/thoughts.css";
+@import "/css/pages/home/home-hero.css";
+@import "/css/pages/home/featured-build.css";
 
 /* responsiveness */
 @import "/css/core/responsiveness.css";

@@ -1,0 +1,55 @@
+.featured-build-container-content {
+  padding: 1.5rem;
+
+  border-radius: 24px;
+  overflow: hidden;
+
+  border:
+    1px solid rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+}
+
+.featured-container-heading {
+  font-size: 0.75rem;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+}
+
+.featured-build-status {
+  display: inline-flex;
+
+  align-self: flex-start;
+
+  padding:
+    0.35rem
+    0.75rem;
+
+  border-radius: 999px;
+}
+
+.featured-build-image {
+  display: block;
+
+  width: 100%;
+
+  max-width: 220px;
+
+  height: auto;
+
+  margin:
+    0 auto
+    1.5rem;
+}
+
+.featured-build-container-content:hover
+.featured-build-image {
+
+  transform: scale(1.02);
+
+}

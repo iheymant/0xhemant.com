@@ -1,4 +1,4 @@
-import { navbarData } from "/data/navbar-data.js";
+import { navbarData } from "/data/navigation/navbar-data.js";
 
 import { renderNavLink } from "/js/components/navbar/desktop-navbar/render-navlink.js";
 

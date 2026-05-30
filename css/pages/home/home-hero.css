@@ -1,0 +1,28 @@
+.home-hero-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.2fr) minmax(320px, 480px);
+
+  gap: 4rem;
+
+  align-items: center;
+}
+
+.home-hero-title {
+  font-size: clamp(4rem,
+      8vw,
+      7rem);
+
+  font-weight: 700;
+
+  line-height: 0.95;
+}
+
+.home-hero-primary-statement {
+  font-size: 2rem;
+}
+
+.home-hero-secondary-statement {
+  color: var(--text-secondary);
+}

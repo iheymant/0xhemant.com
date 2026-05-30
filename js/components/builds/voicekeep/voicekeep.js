@@ -1,5 +1,5 @@
 import { buildsProjectsData } from '/data/builds/index.js';
-import { buildsContents } from '/data/builds/content.js';
+import { voicekeepContents } from '/data/builds/voicekeep/content.js';
 
 import { renderHero } from '/js/components/builds/voicekeep/render-hero.js';
 import { renderLinks } from '/js/components/builds/voicekeep/render-links.js';
@@ -12,7 +12,7 @@ export function renderVoicekeep() {
     project.id === 'voicekeep'
     );
 
-  const voicekeepContent = buildsContents.voicekeep;
+  const voicekeepContent = voicekeepContents.voicekeep;
 
   if (!voicekeepObj || voicekeepObj.visibility !== 'public'){
     return;

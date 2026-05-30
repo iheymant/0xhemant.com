@@ -1,4 +1,4 @@
-export const buildsContents = {
+export const voicekeepContents = {
 
   voicekeep: {
 
