@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+
+  .legal-page-section {
+    padding: 4rem 0;
+  }
+
+  .legal-meta-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .legal-page-title {
+    font-size: 2.4rem;
+  }
+
+}

@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+
+  .home-hero-layout {
+
+    grid-template-columns: 1fr;
+
+    gap: 3rem;
+
+  }
+
+}

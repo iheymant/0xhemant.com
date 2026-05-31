@@ -15,7 +15,20 @@
 
   grid-template-columns: 1fr;
 
+  }
+
+  
+
 }
+
+@media (min-width: 769px) {
+
+  .reading-progress {
+
+    display: none;
+
+  }
+
 }
 
 @media (max-width: 768px) {

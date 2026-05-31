@@ -9,6 +9,10 @@ export function renderNavbar() {
 
     <header class="site-header">
 
+      <div class="reading-progress"></div>
+
+      <div class = "navbar-content">
+
       <div class="container">
 
         ${renderDesktopNav()}
@@ -22,6 +26,8 @@ export function renderNavbar() {
       
       </div>
 
+    </div>
+
     </header>
 
         <button class="ham-menu">
@@ -32,6 +38,8 @@ export function renderNavbar() {
         </button>
 
       ${renderMobileMenu()}
+
+      
       
 
   `;

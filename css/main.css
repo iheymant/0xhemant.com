@@ -24,6 +24,7 @@
 @import "/css/components/mega-menu.css";
 @import "/css/components/mobile-panels.css";
 @import "/css/components/mobile-menu-links-utilities.css";
+@import "/css/components/reading-progress.css";
 
 /* pages */
 @import "/css/pages/home/home.css";
@@ -34,4 +35,9 @@
 @import "/css/pages/home/home-build-stats.css";
 
 /* responsiveness */
-@import "/css/core/responsiveness.css";
+@import "/css/responsive/home-responsive.css";
+@import "/css/responsive/build-grid-responsive.css";
+@import "/css/responsive/navbar-responsive.css";
+@import "/css/responsive/legal-responsive.css";
+@import "/css/responsive/build-overview-responsive.css";
+@import "/css/responsive/empty-state-responsive.css";

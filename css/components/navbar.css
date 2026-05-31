@@ -84,17 +84,18 @@ nav {
   transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+.navbar-content {
+  position: relative;
+
+  z-index: 2;
+
+}
+
 .site-header.dropdown-active {
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
 
   max-height: 520px;
 }
-
-/* .site-header.scrolled {}
-
-
-
-.site-header.hidden {} */
 
 .logo {
   font-size: var(--text-lg);

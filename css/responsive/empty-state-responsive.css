@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+
+  .builds-section-empty {
+    min-height: 65vh;
+
+    padding: 4rem 0;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .empty-builds-title {
+    font-size: 2.1rem;
+  }
+
+}

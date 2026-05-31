@@ -1,0 +1,35 @@
+@media (max-width: 768px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .ham-menu {
+    display: flex;
+
+    position: fixed;
+
+    top: 1.5rem;
+
+    right: 1.25rem;
+
+    z-index: 2000;
+  }
+
+  .mega-menu-layer {
+    display: none;
+  }
+
+  .header-expand-area {
+    display: none;
+  }
+
+}
+
+@media (min-width: 769px) {
+
+  .reading-progress {
+    display: none;
+  }
+
+}
