@@ -80,8 +80,6 @@
 
 .mobile-menu a.active-link {
   color: var(--primary);
-
-  font-weight: 600;
 }
 
 .mobile-link,

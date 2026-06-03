@@ -66,6 +66,7 @@ nav {
   left: 0;
 
   width: 100%;
+  backdrop-filter: blur(1px);
 
   z-index: 1000;
 
@@ -79,9 +80,30 @@ nav {
 
   backdrop-filter: blur(1px);
 
-  max-height: 60px;
+  max-height: 68px;
 
-  transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transition:
+    max-height 1.5s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color .8s ease,
+    backdrop-filter .8s ease,
+    box-shadow .8s ease,
+    /* border-color .3s ease; */
+}
+
+.site-header.scrolled {
+  backdrop-filter: blur(12px);
+  background: transparent;
+  border-bottom:
+    1px solid rgba(255,
+      255,
+      255,
+      .06);
+  box-shadow:
+    0 4px 20px rgba(0,
+      0,
+      0,
+      .08);
+  max-height: 60px;
 }
 
 .navbar-content {
@@ -118,4 +140,12 @@ nav {
   height: 50px;
 
   display: block;
+}
+
+.site-header.scrolled.dropdown-active {
+
+  background: var(--bg);
+
+  backdrop-filter: blur(1px);
+
 }

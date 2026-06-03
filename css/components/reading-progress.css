@@ -7,11 +7,20 @@
   height: 100%;
   opacity: 0.2;
 
-  width: 0;
+  width: 100%;
 
   background:
     var(--primary);
 
   z-index: 1;
+
+  transform-origin: left center;
+
+  transform: scaleX(0);
+
+  will-change: transform;
+
+  backdrop-filter:
+  blur(2px);
 
 }

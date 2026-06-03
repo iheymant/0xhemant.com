@@ -1,36 +1,19 @@
+import { normalizePath } from "/js/components/navbar/utils/normalize-path.js";
+
 export function setActiveLink() {
+  const currentPath = normalizePath(window.location.pathname);
 
-  const currentPath =
-    window.location.pathname;
+  const allLinks = document.querySelectorAll(
+    ".mobile-link, .mobile-submenu-link",
+  );
 
+  allLinks.forEach((link) => {
+    link.classList.remove("active-link");
 
+    const linkPath = normalizePath(link.getAttribute("href"));
 
-  const allLinks =
-    document.querySelectorAll(
-      '.mobile-link, .mobile-submenu-link'
-    );
-
-
-
-  allLinks.forEach(link => {
-
-    link.classList.remove(
-      'active-link'
-    );
-
-
-
-    if (
-      link.getAttribute('href') ===
-      currentPath
-    ) {
-
-      link.classList.add(
-        'active-link'
-      );
-
+    if (linkPath === currentPath) {
+      link.classList.add("active-link");
     }
-
   });
-
 }

@@ -8,46 +8,56 @@ export function initializeReadingProgress() {
   if (!progressElement)
     return;
 
+  let ticking = false;
+
   function updateProgress() {
 
     const scrollTop =
       window.scrollY;
 
-    const documentHeight =
-      document.documentElement.scrollHeight;
-
-    const viewportHeight =
-      window.innerHeight;
-
     const scrollableHeight =
-      documentHeight -
-      viewportHeight;
+      document.documentElement.scrollHeight -
+      window.innerHeight;
 
     if (scrollableHeight <= 0) {
 
-      progressElement.style.setProperty(
-        '--reading-progress',
-        '0%'
-      );
+      progressElement.style.transform =
+        'scaleX(0)';
+
+      ticking = false;
 
       return;
 
     }
 
     const progress =
-      (
-        scrollTop /
-        scrollableHeight
-      ) * 100;
+      Math.min(
+        scrollTop / scrollableHeight,
+        1
+      );
 
-    progressElement.style.width =
-      `${progress}%`;
+    progressElement.style.transform =
+      `scaleX(${progress})`;
+
+    ticking = false;
 
   }
 
   window.addEventListener(
     'scroll',
-    updateProgress,
+    () => {
+
+      if (!ticking) {
+
+        requestAnimationFrame(
+          updateProgress
+        );
+
+        ticking = true;
+
+      }
+
+    },
     { passive: true }
   );
 
