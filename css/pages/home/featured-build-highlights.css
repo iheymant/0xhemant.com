@@ -1,0 +1,49 @@
+.featured-build-highlights {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: var(--space-xm);
+
+  opacity: 0.8;
+
+  color: var(--text);
+
+}
+
+.featured-build-highlight {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: var(--space-xm);
+
+}
+
+.featured-build-highlight-icon {
+
+  flex-shrink: 0;
+
+  width: 20px;
+
+  height: 20px;
+
+  border-radius: 999px;
+
+  display: grid;
+
+  place-items: center;
+
+  font-size: var(--text-xs);
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      .08
+    );
+
+}

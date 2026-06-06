@@ -25,6 +25,7 @@
 @import "/css/components/mobile-panels.css";
 @import "/css/components/mobile-menu-links-utilities.css";
 @import "/css/components/reading-progress.css";
+@import "/css/pages/home/featured-build-highlights.css";
 
 /* pages */
 @import "/css/pages/home/home.css";
