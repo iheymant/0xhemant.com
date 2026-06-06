@@ -10,7 +10,7 @@ import { buildsProjectsData } from "/data/builds/index.js";
 //   ).length;
 
 //   const conceptual = buildsProjectsData.filter(
-//     (build) => build.status === "experimantal",
+//     (build) => build.status === "conceptual",
 //   ).length;
 
 //   return {

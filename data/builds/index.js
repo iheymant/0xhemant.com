@@ -9,6 +9,7 @@ export const buildsProjectsData = [
     featured: true,
     category: ["productivity", "browser-extension"],
     type: "extension",
+    highlights: ["Capture meetings", "Generate summaries", "Privacy first"],
     description:
       "Capture and save live meeting captions from Online Meetings with speaker tracking and conversational flow.",
     links: {

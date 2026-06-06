@@ -1,39 +1,60 @@
+import { buildStatusMeta } from "/data/home/build-status-meta.js";
 import { getBuildStats } from "/js/components/home/get-build-stats.js";
 
-const buildStats = getBuildStats();
+export function renderHomeBuildStats() {
+  const buildStats = getBuildStats();
 
-export function renderHomeBuildStats(){
+  const homeStatsContainer = document.querySelector(".home-stats-container");
 
-  const homeStatsContainer = document.querySelector('.home-stats-container');
+  if (!homeStatsContainer) return;
 
-  if (!homeStatsContainer)
-    return;
+  const displayOrder = [
 
+    'conceptual',
 
+    'experimental',
 
-  const statsHtml = Object.entries(buildStats)
-  .map(([status, count]) => {
+    'live'
 
-    return `
+  ];
 
-      <div class="home-stat">
+  const statsHtml =
+    displayOrder
+      .map(status => {
 
-        <span class="home-stat-count">
-          ${count}
-        </span>
+        const count =
+          buildStats[status] || 0;
 
-        <span class="home-stat-label">
-          ${status}
-        </span>
+        const meta =
+          buildStatusMeta[status];
 
-      </div>
+        return `
+          <div class="home-stat">
 
-    `;
+            <span
+              class="
+                home-stat-dot
+                home-stat-dot--${meta.color}
+              "
+            ></span>
 
-  })
-  .join('');
+            <span class="home-stat-count">
+              ${count}
+            </span>
+
+            <span class="home-stat-label">
+              ${meta.label}
+            </span>
+
+            <span class="home-stat-description home-stat-sublabel">
+              ${meta.description}
+            </span>
+
+          </div>
+        `;
+
+      })
+      .join('');
 
   homeStatsContainer.innerHTML = statsHtml;
-
-  
 }

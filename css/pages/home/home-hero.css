@@ -3,10 +3,9 @@
   display: grid;
 
   grid-template-columns:
-    minmax(0, 1.4fr)
-    minmax(320px, 420px);
+    minmax(0, 1.4fr) minmax(320px, 420px);
 
-  gap: 4rem;
+  gap: clamp(2.5rem, 5vw, 5rem);
 
   align-items: center;
 
@@ -18,8 +17,20 @@
 
   flex-direction: column;
 
-  gap: 1.5rem;
+  gap: var(--space-lg);
 
+}
+
+.home-hero-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
 }
 
 .home-hero-title {
@@ -30,12 +41,46 @@
   font-weight: 700;
 
   line-height: 0.95;
+
+  letter-spacing: -0.035em;
+
+  color: var(--primary);
+
+  margin: 0;
+}
+
+.home-hero-statements {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
 }
 
 .home-hero-primary-statement {
-  font-size: 2rem;
+  font-size: clamp(1.15rem, 2vw, 1.65rem);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+  color: var(--text);
+}
+.home-hero-primary-statement {
+  font-size: clamp(1.15rem, 2vw, 1.65rem);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+  color: var(--text);
 }
 
-.home-hero-secondary-statement {
+.home-hero-description p {
+  font-size: var(--text-sm);
   color: var(--text-secondary);
+  line-height: 1.65;
+  max-width: 44ch;
+  margin: 0;
+}
+
+.home-hero-cta-group {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  align-items: center;
 }

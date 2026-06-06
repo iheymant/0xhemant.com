@@ -20,7 +20,11 @@ export function renderFeaturedBuild() {
       <img class="featured-build-image" src=${featuredBuildImageSrc} alt = ${featuredBuildImageAltText}>
       <h2 class="featured-build-name">${featuredBuildName}</h2>
       <p class="featured-build-tagline">${featuredBuildTagline}</p>
-      <div class="featured-build-status">${featuredBuildTagStatus}</div>
+
+      <div class="featured-build-status-row">
+       <div class="featured-build-status">${featuredBuildTagStatus}</div>
+       <span class="featured-build-updated">Updated recently</span>
+      </div>
       <a
         class="featured-build-redirect-button btn btn-primary"
         href="${featuredBuildRedirectButtonUrl}"

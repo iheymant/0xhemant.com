@@ -8,7 +8,7 @@ export const heroContent = {
       weight: 5
     },
     {
-      primary: 'Building products and systems,',
+      primary: 'Building ideas,',
       secondary: 'Shipping ideas into reality.',
       weight: 5
     }
@@ -16,8 +16,20 @@ export const heroContent = {
 
   ],
 
+  description:
+    'Independent builder exploring software, automation and AI through public projects.',
+
   cta: {
-    label: 'Explore Builds',
-    href: '/builds/'
+
+    primary: {
+      label: 'Explore Builds',
+      href: '/builds/'
+    },
+
+    secondary: {
+      label: 'Current Project',
+      href: '/builds/voicekeep/'
+    }
+
   }
 }

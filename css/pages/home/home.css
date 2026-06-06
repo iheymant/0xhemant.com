@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   background-color: var(--bg-secondary);
-  min-height: 80vh;
-  padding:
-    8rem 0 6rem;
+  min-height: 88vh;
+  padding: clamp(6rem, 14vh, 10rem) 0 clamp(5rem, 10vh, 8rem);
+  overflow: hidden;
 }
