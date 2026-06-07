@@ -9,7 +9,7 @@ export const buildsProjectsData = [
     featured: true,
     category: ["productivity", "browser-extension"],
     type: "extension",
-    highlights: ["Never lose meeting context", "Instant downloable transcripts", "Privacy first"],
+    highlights: ["Never lose meeting context", "Instant downloadable transcripts", "Privacy first"],
     description:
       "Capture and save live meeting captions from Online Meetings with speaker tracking and conversational flow.",
     links: {
@@ -24,7 +24,7 @@ export const buildsProjectsData = [
       keywords: ["meeting", "transcript", "memory", "voice"],
     },
     version: "0.1.0 [Beta]",
-    stack: ["html", "javascript", "css", "web-api"],
+    stack: ["html", "javascript", "css", "Chrome-Extension-Api"],
     launchedDate: "May-2026",
     lastUpdatedDate: "no last update",
     thumbnail: "/assets/builds/images/voicekeep/logo.png",

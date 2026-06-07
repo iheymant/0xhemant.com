@@ -1,0 +1,49 @@
+.build-screenshots-container {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8rem;
+
+}
+
+.build-screenshot {
+
+  display: grid;
+
+  grid-template-columns:
+    1.2fr
+    1fr;
+
+  gap: 4rem;
+
+  align-items: center;
+
+}
+
+.build-screenshot--reverse {
+
+  grid-template-columns:
+    1fr
+    1.2fr;
+
+}
+
+.build-screenshot--reverse
+.build-screenshot-image-wrapper {
+
+  order: 2;
+
+}
+
+
+.build-screenshot-image {
+
+  width: 100%;
+
+  display: block;
+
+  border-radius: 20px;
+
+}

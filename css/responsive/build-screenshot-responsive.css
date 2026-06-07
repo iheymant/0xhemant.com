@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+
+  .build-screenshot {
+
+    grid-template-columns: 1fr;
+
+    gap: 1.5rem;
+
+  }
+
+  .build-screenshot--reverse
+  .build-screenshot-image-wrapper {
+
+    order: initial;
+
+  }
+
+}

@@ -1,4 +1,4 @@
-export function renderHero(project){
+export function createBuildHeroMarkup(project){
 
   return `
     <section class="build-hero">
