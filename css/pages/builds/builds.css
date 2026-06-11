@@ -40,16 +40,7 @@
 
 .builds-hero-title span {
 
-  background:
-    linear-gradient(
-      90deg,
-      var(--primary),
-      #8b5cf6
-    );
-
-  -webkit-background-clip: text;
-
-  color: transparent;
+ color: var(--primary);
 
 }
 

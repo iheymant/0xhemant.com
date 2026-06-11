@@ -29,24 +29,24 @@ export function renderHomeBuildStats() {
           buildStatusMeta[status];
 
         return `
-          <div class="home-stat">
+          <div class="stat-card">
 
             <span
               class="
-                home-stat-dot
-                home-stat-dot--${meta.color}
+                stat-card-dot
+                stat-card-dot--${meta.color}
               "
             ></span>
 
-            <span class="home-stat-count">
+            <span class="stat-card-count">
               ${count}
             </span>
 
-            <span class="home-stat-label">
+            <span class="stat-card-label">
               ${meta.label}
             </span>
 
-            <span class="home-stat-description home-stat-sublabel">
+            <span class="stat-card-description stat-card-sublabel">
               ${meta.description}
             </span>
 

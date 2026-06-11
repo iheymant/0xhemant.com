@@ -1,10 +1,10 @@
-.home-stats-container {
+.stat-cards-container {
   display: flex;
   gap: var(--space-sm);
   flex-wrap: wrap;
 }
 
-.home-stat {
+.stat-card {
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -17,13 +17,13 @@
     box-shadow var(--transition-fast);
 }
 
-.home-stat:hover {
+.stat-card:hover {
   border-color: var(--border);
   box-shadow: var(--shadow-sm);
   cursor: pointer;
 }
 
-.home-stat-count {
+.stat-card-count {
   font-size: var(--text-base);
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -31,18 +31,18 @@
   color: var(--text);
 }
 
-.home-stat-label {
+.stat-card-label {
   color: var(--text);
   opacity: 0.8;
 }
 
-.home-stat-sublabel {
+.stat-card-sublabel {
   font-size: calc(var(--text-sm) - 0.05rem);
   color: var(--text-muted);
   line-height: 1.3;
 }
 
-.home-stat-dot {
+.stat-card-dot {
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -50,6 +50,6 @@
   flex-shrink: 0;
 }
 
-.home-stat-dot--live         { background: #34c759; }
-.home-stat-dot--experimental { background: #ff9f0a; }
-.home-stat-dot--conceptual   { background: #bf5af2; }
+.stat-card-dot--live         { background: #34c759; }
+.stat-card-dot--experimental { background: #ff9f0a; }
+.stat-card-dot--conceptual   { background: #bf5af2; }
