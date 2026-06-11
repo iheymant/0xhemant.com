@@ -1,6 +1,9 @@
+import { formatRelativeDate } from "/js/utils/format-relative-date.js";
 export function renderPrivacy(
   privacyContent
 ) {
+
+  const lastUpdatedDate = formatRelativeDate(privacyContent.updatedAt);
 
   const sectionsHTML =
     privacyContent.sections.map(
@@ -107,7 +110,7 @@ export function renderPrivacy(
 
                 <span class="legal-meta-value">
 
-                  ${privacyContent.updatedAt}
+                  ${lastUpdatedDate}
 
                 </span>
 

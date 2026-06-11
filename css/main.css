@@ -30,7 +30,7 @@
 
 /* pages */
 @import "/css/pages/home/home.css";
-@import "/css/pages/builds.css";
+@import "/css/pages/builds/builds.css";
 @import "/css/pages/thoughts.css";
 @import "/css/pages/home/home-hero.css";
 @import "/css/pages/home/featured-build.css";
@@ -44,3 +44,4 @@
 @import "/css/responsive/build-overview-responsive.css";
 @import "/css/responsive/empty-state-responsive.css";
 @import "/css/responsive/build-screenshot-responsive.css";
+@import "/css/responsive/builds-page.css";

@@ -1,0 +1,82 @@
+.builds-hero-section {
+
+  padding-block:
+    clamp(
+      1rem,
+      5vw,
+      6rem
+    );
+
+}
+
+.builds-hero-layout {
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    300px;
+
+  gap: 4rem;
+
+  align-items: center;
+
+}
+
+.builds-hero-title {
+
+  font-size:
+    clamp(
+      3.5rem,
+      7vw,
+      4.5rem
+    );
+
+  line-height: 0.95;
+
+  margin-bottom: 1rem;
+
+}
+
+.builds-hero-title span {
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--primary),
+      #8b5cf6
+    );
+
+  -webkit-background-clip: text;
+
+  color: transparent;
+
+}
+
+.builds-hero-description {
+
+  max-width: 32ch;
+
+  margin-bottom: 2rem;
+
+}
+
+.builds-hero-visual {
+
+ display: flex;
+  flex-direction: column;
+
+}
+
+.builds-hero-visual-placeholder {
+
+  min-height:
+    320px;
+
+  display: flex;
+
+  flex-direction: row;
+
+  place-items: center;
+
+}

@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+
+  .builds-hero-layout {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+  .builds-hero-visual {
+
+    display: none;
+
+  }
+
+}
+
+.builds-hero-visual {
+ 
+  display: flex;
+  direction: column;
+}

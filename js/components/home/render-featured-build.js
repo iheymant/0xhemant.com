@@ -1,5 +1,6 @@
 import { getFeaturedBuild } from "/js/components/home/get-featured-build.js";
 import { getFeaturedBuildHightlight } from "/js/components/home/get-featured-build-highlight.js";
+import { formatRelativeDate } from "/js/utils/format-relative-date.js";
 
 export function renderFeaturedBuild() {
   const featuredContainer = document.querySelector(".featured-build-container");
@@ -16,6 +17,7 @@ export function renderFeaturedBuild() {
   const featuredBuildTagline = featuredBuild.tagline;
   const featuredBuildTagStatus = featuredBuild.status;
   const featuredBuildRedirectButtonUrl = featuredBuild.pages.overview;
+  const lastUpdatedDate = formatRelativeDate(featuredBuild.lastUpdatedDate);
 
   const featuredContainerHtml = `
     <div class="featured-build-container-content">
@@ -43,7 +45,7 @@ export function renderFeaturedBuild() {
 
           <div class="featured-build-status-row">
            <div class="featured-build-status">${featuredBuildTagStatus}</div>
-           <span class="featured-build-updated">Updated recently</span>
+           <span class="featured-build-updated">Updated ${lastUpdatedDate}</span>
           </div>
         
        <a

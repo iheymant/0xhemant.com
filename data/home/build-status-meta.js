@@ -1,5 +1,12 @@
 export const buildStatusMeta = {
 
+  public: {
+    label: 'Public Builds',
+    description: 'Across all stages',
+    color: 'public'
+
+  },
+
   live: {
     label: 'Live',
     description: 'Shipped and live',
