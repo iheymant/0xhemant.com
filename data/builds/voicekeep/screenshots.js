@@ -1,42 +1,30 @@
 export const voicekeepScreenshots = [
-
   {
-
     image:
-      '/assets/builds/images/voicekeep/screenshots/voicekeep-transcript-preview.png',
+      "/assets/builds/images/voicekeep/screenshots/voicekeep-transcript-preview.png",
 
-    title:
-      'Capture conversations',
+    title: "Capture conversations",
 
-    description:
-      'Store important discussions while they happen.'
+    description: "Store important discussions while they happen.",
 
+    currentFocused: true,
   },
 
   {
-
     image:
-      '/assets/builds/images/voicekeep/screenshots/voicekeep-extenstion-transcript-downloadable-preview.png',
+      "/assets/builds/images/voicekeep/screenshots/voicekeep-extenstion-transcript-downloadable-preview.png",
 
-    title:
-      'download any previous meetings',
+    title: "download any previous meetings",
 
-    description:
-      'Find context from earlier conversations.'
-
+    description: "Find context from earlier conversations.",
   },
 
   {
-
     image:
-      '/assets/builds/images/voicekeep/screenshots/voicekeep-extension-popup-preview.png',
+      "/assets/builds/images/voicekeep/screenshots/voicekeep-extension-popup-preview.png",
 
-    title:
-      'Export and organize',
+    title: "Export and organize",
 
-    description:
-      'Keep meeting information accessible outside the extension.'
-
-  }
-
+    description: "Keep meeting information accessible outside the extension.",
+  },
 ];

@@ -4,7 +4,6 @@
 
     grid-template-columns:
       1fr;
-
   }
 
   .builds-hero-visual {
@@ -13,10 +12,16 @@
 
   }
 
+  .builds-hero-section {
+
+  padding-top: 5rem;
+
 }
 
-.builds-hero-visual {
+}
+
+/* .builds-hero-visual {
  
   display: flex;
   direction: column;
-}
+} */

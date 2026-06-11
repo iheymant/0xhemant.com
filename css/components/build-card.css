@@ -1,0 +1,152 @@
+.build-archive-card {
+
+  display: flex;
+
+  flex-direction: column;
+
+  height: 100%;
+
+  padding: 1.5rem;
+
+  min-height: 200px;
+
+  overflow: hidden;
+
+  border-radius: 24px;
+
+  border: 1px solid var(--border);
+
+  background: var(--surface);
+
+  transition:
+    transform .25s ease,
+    border-color .25s ease;
+
+}
+
+.builds-archive-grid {
+display: grid;
+
+  grid-template-columns:
+    300px 1fr;
+
+  gap: 1rem;
+
+  padding: 0.5rem;
+
+}
+
+.build-archive-card:hover {
+
+  transform:
+    translateY(-4px);
+
+}
+
+.build-archive-card-image {
+
+   width: 72px;
+
+  height: 72px;
+
+  border-radius: 12px;
+
+  aspect-ratio: 1;
+
+  display: none;
+
+
+}
+
+.build-archive-card-content {
+
+  display: flex;
+
+  flex-direction: column;
+
+  flex: 1;
+
+  padding: 1.25rem;
+
+}
+
+.build-archive-card-status {
+
+  width: fit-content;
+
+  padding:
+    .4rem .75rem;
+
+  border-radius: 999px;
+
+  font-size: .75rem;
+
+  text-transform: uppercase;
+
+}
+
+.build-archive-card-status--live {
+
+  background:
+    rgba(
+      34,
+      197,
+      94,
+      .15
+    );
+
+}
+
+.build-archive-card-status--experimental {
+
+  background:
+    rgba(
+      234,
+      179,
+      8,
+      .15
+    );
+
+}
+
+.build-archive-card-status--conceptual {
+
+  background:
+    rgba(
+      59,
+      130,
+      246,
+      .15
+    );
+
+}
+
+.build-archive-card-title {
+
+  margin-top: 1rem;
+
+  margin-bottom: .75rem;
+
+}
+
+.build-archive-card-tagline {
+
+  line-height: 1.7;
+
+  opacity: .8;
+
+}
+
+.build-archive-card-footer {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-top: auto;
+
+  padding-top: 1.5rem;
+
+}

@@ -1,0 +1,31 @@
+.archive-eyebrow {
+
+  margin-bottom: .75rem;
+
+  opacity: .65;
+
+  letter-spacing: .12em;
+
+  text-transform: uppercase;
+
+}
+
+.archive-title {
+
+  margin-bottom: 1rem;
+
+}
+
+.archive-description {
+
+  max-width: 48ch;
+
+}
+
+.archive-count {
+
+  margin-top: 1.5rem;
+
+  opacity: .7;
+
+}

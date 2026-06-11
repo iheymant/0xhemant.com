@@ -27,6 +27,7 @@
 @import "/css/components/reading-progress.css";
 @import "/css/pages/home/featured-build-highlights.css";
 @import "/css/components/builds-screenshot.css";
+@import "/css/components/build-card.css";
 
 /* pages */
 @import "/css/pages/home/home.css";
@@ -35,6 +36,9 @@
 @import "/css/pages/home/home-hero.css";
 @import "/css/pages/home/featured-build.css";
 @import "/css/pages/home/home-build-stats.css";
+@import "/css/pages/builds/current-focus.css";
+@import "/css/pages/builds/builds-grid-archive.css";
+
 
 /* responsiveness */
 @import "/css/responsive/home-responsive.css";
@@ -45,3 +49,4 @@
 @import "/css/responsive/empty-state-responsive.css";
 @import "/css/responsive/build-screenshot-responsive.css";
 @import "/css/responsive/builds-page.css";
+@import "/css/responsive/build-current-focus.css";

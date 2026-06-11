@@ -1,0 +1,43 @@
+@media (max-width: 900px) {
+
+  .focus-build-card {
+    min-height: auto;
+  }
+
+  .focus-build-overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(255,255,255,0.96),
+        rgba(255,255,255,0.85)
+      );
+  }
+
+  .focus-build-content {
+    max-width: 100%;
+
+    padding: var(--padding-xl);
+  }
+
+  .focus-build-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+
+@media (max-width: 640px) {
+
+  .focus-build-content {
+    padding: var(--padding-lg);
+  }
+
+  .focus-build-title {
+    font-size: 2.5rem;
+  }
+
+  .focus-build-tagline {
+    font-size: var(--text-base);
+  }
+
+}
