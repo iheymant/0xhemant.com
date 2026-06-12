@@ -1,0 +1,29 @@
+.archive-empty-state {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  min-height: 320px;
+
+}
+
+.archive-empty-title {
+
+  margin-bottom: .75rem;
+
+}
+
+.archive-empty-description {
+
+  max-width: 40ch;
+
+  opacity: .7;
+
+}

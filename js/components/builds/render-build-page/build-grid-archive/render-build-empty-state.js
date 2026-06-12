@@ -1,18 +1,46 @@
 import { getBuildOverview } from "/js/components/builds/render-build-page/builds-stats/get-build-overview.js";
 
-export function renderBuildEmptyState (){
+export function renderBuildEmptyState(filteredBuilds, filterName) {
+  const emptyStateContainer = document.querySelector(
+    ".builds-archive-empty-state",
+  );
 
-  const archiveContainer = document.querySelector('.builds-archive-container');
-  const emptyStateContainer = document.querySelector('.builds-archive-empty-state');
-  const emptyStateText = "No Builds available for now"
+  if (!emptyStateContainer) return;
 
-  const buildsOverview = getBuildOverview();
-  const buildsLength = buildsOverview.total;
+  if (filteredBuilds.length > 0) {
+    emptyStateContainer.hidden = true;
 
-  if (buildsLength > 0){
-    emptyStateContainer?.remove();;
+    return;
   }
-  else {
-  emptyStateContainer.innerHTML = emptyStateText;
-  }
+
+  emptyStateContainer.hidden = false;
+
+  emptyStateContainer.innerHTML = `
+
+    <div class="archive-empty-state">
+
+      <h3
+        class="
+          archive-empty-title
+        "
+      >
+
+        No builds found
+
+      </h3>
+
+      <p
+        class="
+          archive-empty-description
+        "
+      >
+
+        No projects match the
+        ${filterName} filter.
+
+      </p>
+
+    </div>
+
+  `;
 }

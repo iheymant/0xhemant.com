@@ -18,7 +18,6 @@ export function initialiseBuildsPage() {
   renderBuildArchive();
   renderBuildArchiveGrid();
   renderBuildArchiveHeader();
-  renderBuildEmptyState();
   renderBuildArchiveFilters();
   initializeBuildArchiveEvents();
 }
