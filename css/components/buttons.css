@@ -71,7 +71,7 @@
   transform: translateY(-1px);
 
   border-color:
-    var(--text-primary);
+    var(--primary);
 
 }
 

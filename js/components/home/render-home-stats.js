@@ -4,7 +4,7 @@ import { getBuildStats } from "/js/components/home/get-build-stats.js";
 export function renderHomeBuildStats() {
   const buildStats = getBuildStats();
 
-  const homeStatsContainer = document.querySelector(".home-stats-container");
+  const homeStatsContainer = document.querySelector(".stat-cards-container");
 
   if (!homeStatsContainer) return;
 
