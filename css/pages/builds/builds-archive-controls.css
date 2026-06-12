@@ -1,0 +1,42 @@
+.filters-button-container {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-md);
+}
+
+
+
+.builds-archive-controls {
+
+  display: flex;
+
+  gap: .75rem;
+
+  flex-wrap: wrap;
+
+}
+
+.archive-filter {
+
+  padding:
+    .65rem 1rem;
+
+  border-radius: 999px;
+
+  border: 1px solid var(--border);
+
+  background: transparent;
+
+  cursor: pointer;
+
+
+}
+
+.archive-filter--active {
+
+  color: var(--primary);
+
+  border-color: var(--primary);
+
+}

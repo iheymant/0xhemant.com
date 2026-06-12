@@ -38,6 +38,7 @@
 @import "/css/pages/home/home-build-stats.css";
 @import "/css/pages/builds/current-focus.css";
 @import "/css/pages/builds/builds-grid-archive.css";
+@import "/css/pages/builds/builds-archive-controls.css";
 
 
 /* responsiveness */
@@ -50,3 +51,4 @@
 @import "/css/responsive/build-screenshot-responsive.css";
 @import "/css/responsive/builds-page.css";
 @import "/css/responsive/build-current-focus.css";
+@import "/css/responsive/build-archive-controls.css";
