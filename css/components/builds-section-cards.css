@@ -52,7 +52,7 @@
 .build-card-link:hover {
   transform: translateY(-4px);
 
-  border-color: rgba(0, 113, 227, 0.22);
+  border-color: var(--shadow-md);
 
   box-shadow: var(--shadow-md);
 }

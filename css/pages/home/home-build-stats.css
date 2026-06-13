@@ -50,7 +50,7 @@
   flex-shrink: 0;
 }
 
-.stat-card-dot--live         { background: #34c759; }
-.stat-card-dot--experimental { background: #ff9f0a; }
-.stat-card-dot--conceptual   { background: #bf5af2; }
-.stat-card-dot--public   { background: #ff3b30; }
+.stat-card-dot--live         { background: var(--live); }
+.stat-card-dot--experimental { background: var(--experimental); }
+.stat-card-dot--conceptual   { background: var(--conceptual); }
+.stat-card-dot--public   { background: var(--public); }

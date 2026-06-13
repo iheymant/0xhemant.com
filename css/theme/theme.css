@@ -1,0 +1,49 @@
+:root {
+
+   /* COLORS (light mode) */
+  --bg: #ffffff;
+  --bg-secondary: #f5f5f7;
+  --surface: #ffffff;
+
+  --text: #1d1d1f;
+  --text-primary: #ffffff;
+  --text-secondary: #6e6e73;
+  --text-muted: #86868b;
+
+  --primary: #0071e3;
+  --primary-hover: #0077ed;
+  --accent: #0071e3;
+
+  --border: #d2d2d7;
+  --divider: #e5e5e7;
+
+    /* SHADOWS */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
+
+}
+
+[data-theme="dark"] {
+
+  --bg: #0f1115;
+
+  --surface: #151922;
+
+  --surface-secondary: #1a1f29;
+
+  --surface-tertiary: #222938;
+
+  --text: #f3f5f7;
+
+  --text-muted: #a0a8b5;
+
+  --primary: #09090aec;
+
+  --text-subtle: #6b7280;
+
+  --border: #252b36;
+
+  --border-strong: #333b48;
+
+}
