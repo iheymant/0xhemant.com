@@ -7,3 +7,5 @@ export function toggleTheme() {
 
   localStorage.setItem("theme", nextTheme);
 }
+
+window.toggleTheme = toggleTheme;
