@@ -13,7 +13,7 @@ export const buildsProjectsData = [
     description:
       "Capture and save live meeting captions from Online Meetings with speaker tracking and conversational flow.",
     links: {
-      install: "/builds/voicekeep",
+      install: "https://chromewebstore.google.com/detail/voicekeep-beta-capture-an/dpoolddiohjpckolfhkjkoohpfadmjan",
       privacy: "/builds/voicekeep/privacy",
     },
     seo: {
