@@ -49,8 +49,8 @@ export const buildsProjectsData = [
     },
     version: "0.1.0 [Beta]",
     stack: ["html", "javascript", "css", "Chrome-Extension-Api"],
-    launchedDate: "2026-05-25",
-    lastUpdatedDate: "2026-05-30",
+    launchedDate: "2026-06-14",
+    lastUpdatedDate: "2026-06-14",
     thumbnail: "/assets/builds/images/voicekeep/logo.png",
 
     logo: "/assets/builds/images/voicekeep/logo.png",

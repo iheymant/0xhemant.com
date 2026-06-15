@@ -11,7 +11,7 @@ export const voicekeepPrivacyContent = {
 
   updatedAt: "2026-06-14",
 
-  effectiveDate: "2026-05-20",
+  effectiveDate: "2026-06-14",
 
   version: "0.1.0 [Beta]",
 
