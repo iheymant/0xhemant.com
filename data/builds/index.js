@@ -60,4 +60,28 @@ export const buildsProjectsData = [
       privacy: "/builds/voicekeep/privacy/",
     },
   },
+  {
+    id: 'resonance',
+
+    name: "Resonance",
+
+    status: "Experimental",
+
+    featured: false,
+
+    visibility: "public",
+
+    tagline: "Music-driven web experiences.",
+
+    description:
+      "An experiment exploring how websites can synchronize motion, storytelling and interaction with music in real time.",
+
+    pages: {
+      overview: "/builds/resonance/",
+    },
+    launchedDate: "2026-06-20",
+
+    lastUpdatedDate: "2026-06-20",
+    version: "not live yet",
+  },
 ];
