@@ -25,5 +25,18 @@ export const resonanceChangelog = [
 
     description: "now music filed can be uploaded on Resonance.",
   },
+  {
+    slug: "audio-graph-feature-added",
+
+    date: "2026-06-21",
+
+    version: "0.1.1",
+
+    type: "project",
+
+    title: "Audio Graph feature added",
+
+    description: "now after uploading Song, Graph can be displayed on Resonance.",
+  },
 
 ];
