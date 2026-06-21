@@ -27,6 +27,12 @@ export function renderDemoInfos() {
         and has not yet reached
         a usable prototype.
 
+        <p>
+        Please check back later.
+        </p>
+
+        <p>
+
         Lastly it was updated
         <span
           class="
@@ -36,16 +42,9 @@ export function renderDemoInfos() {
             ${lastUpdatedDate}
           "
         >
-          ${lastUpdatedRelativeDate.toLowerCase()}
-        </span>.
-
-      </p>
-
-      <p>
-
-        Please check back later.
-
-        Thank you for your interest.
+        ${lastUpdatedRelativeDate.toLowerCase()}.
+        </span> Thank you for your interest.
+        </p>
 
       </p>
 
