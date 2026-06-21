@@ -1,5 +1,6 @@
 import { buildStatusMeta } from "/data/home/build-status-meta.js";
 import { getBuildStats } from "/js/components/home/get-build-stats.js";
+import { renderStatCard } from "/js/components/shared/stat-card/render-stat-card.js";
 
 export function renderHomeBuildStats() {
   const buildStats = getBuildStats();
@@ -8,53 +9,21 @@ export function renderHomeBuildStats() {
 
   if (!homeStatsContainer) return;
 
-  const displayOrder = [
+  const displayOrder = ["live", "experimental", "conceptual"];
 
-    'conceptual',
+  const statsHtml = displayOrder
+    .map((status) => {
+      const count = buildStats[status] || 0;
 
-    'experimental',
+      const meta = buildStatusMeta[status];
 
-    'live'
+      return renderStatCard({
+        count,
+        meta,
+      });
+    })
 
-  ];
-
-  const statsHtml =
-    displayOrder
-      .map(status => {
-
-        const count =
-          buildStats[status] || 0;
-
-        const meta =
-          buildStatusMeta[status];
-
-        return `
-          <div class="stat-card">
-
-            <span
-              class="
-                stat-card-dot
-                stat-card-dot--${meta.color}
-              "
-            ></span>
-
-            <span class="stat-card-count">
-              ${count}
-            </span>
-
-            <span class="stat-card-label">
-              ${meta.label}
-            </span>
-
-            <span class="stat-card-description stat-card-sublabel">
-              ${meta.description}
-            </span>
-
-          </div>
-        `;
-
-      })
-      .join('');
+    .join("");
 
   homeStatsContainer.innerHTML = statsHtml;
 }

@@ -1,5 +1,6 @@
 import { getBuildOverview } from "/js/components/builds/render-build-page/builds-stats/get-build-overview.js";
 import { buildStatusMeta } from "/data/home/build-status-meta.js";
+import { renderStatCard } from "/js/components/shared/stat-card/render-stat-card.js";
 
 export function renderBuildsPageStats() {
   const buildsStatsGrid = document.querySelector(".builds-stats-grid");
@@ -14,16 +15,16 @@ export function renderBuildsPageStats() {
       count: overview.total || 0,
     },
     {
-      key: "conceptual",
-      count: overview.stats.conceptual || 0,
+      key: "live",
+      count: overview.stats.live || 0,
     },
     {
       key: "experimental",
       count: overview.stats.experimental || 0,
     },
     {
-      key: "live",
-      count: overview.stats.live || 0,
+      key: "conceptual",
+      count: overview.stats.conceptual || 0,
     },
   ];
 
@@ -31,30 +32,10 @@ export function renderBuildsPageStats() {
     .map(({ key, count }) => {
       const meta = buildStatusMeta[key];
 
-      return `
-        <div class="stat-card">
-
-          <span
-            class="
-              stat-card-dot
-              stat-card-dot--${meta.color}
-            "
-          ></span>
-
-          <span class="stat-card-count">
-            ${count}
-          </span>
-
-          <span class="stat-card-label">
-            ${meta.label}
-          </span>
-
-          <span class="stat-card-description stat-card-sublabel">
-            ${meta.description}
-          </span>
-
-        </div>
-      `;
+      return renderStatCard({
+        count,
+        meta,
+      });
     })
     .join("");
 

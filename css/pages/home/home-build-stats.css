@@ -2,6 +2,7 @@
   display: flex;
   gap: var(--space-sm);
   flex-wrap: wrap;
+
 }
 
 .stat-card {
@@ -15,6 +16,8 @@
   min-width: 90px;
   transition: border-color var(--transition-fast),
     box-shadow var(--transition-fast);
+  text-decoration: none;
+  color: inherit;
 }
 
 .stat-card:hover {
@@ -50,7 +53,18 @@
   flex-shrink: 0;
 }
 
-.stat-card-dot--live         { background: var(--live); }
-.stat-card-dot--experimental { background: var(--experimental); }
-.stat-card-dot--conceptual   { background: var(--conceptual); }
-.stat-card-dot--public   { background: var(--public); }
+.stat-card-dot--live {
+  background: var(--live);
+}
+
+.stat-card-dot--experimental {
+  background: var(--experimental);
+}
+
+.stat-card-dot--conceptual {
+  background: var(--conceptual);
+}
+
+.stat-card-dot--public {
+  background: var(--public);
+}
