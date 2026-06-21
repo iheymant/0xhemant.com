@@ -33,15 +33,11 @@ export function renderFeaturedBuild() {
          <h2 class="featured-build-name">${featuredBuildName}</h2>
          <p class="featured-build-tagline">${featuredBuildTagline}</p>
 
-         <hr>
-
           <ul class="featured-build-highlights">
            
            ${featuredBuildHighlights}
 
           </ul>
-        
-          <hr>
 
           <div class="featured-build-status-row">
            <div class="featured-build-status">${featuredBuildTagStatus}</div>

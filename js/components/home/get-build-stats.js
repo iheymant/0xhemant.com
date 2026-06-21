@@ -1,25 +1,5 @@
 import { buildsProjectsData } from "/data/builds/index.js";
 
-// export function getBuildStats() {
-//   const live = buildsProjectsData.filter(
-//     (build) => build.status === "live",
-//   ).length;
-
-//   const experimantal = buildsProjectsData.filter(
-//     (build) => build.status === "experimental",
-//   ).length;
-
-//   const conceptual = buildsProjectsData.filter(
-//     (build) => build.status === "conceptual",
-//   ).length;
-
-//   return {
-//     conceptual,
-//     experimantal,
-//     live,
-//   };
-// }
-
 export function getBuildStats() {
   return buildsProjectsData
     .filter((build) => build.visibility.toLowerCase() === "public")
