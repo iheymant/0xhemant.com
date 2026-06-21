@@ -22,11 +22,22 @@ input[type="file"]{
 .analysis-results {
   width: 100%;
   max-width: 1250px;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .analysis-results .waveform-canvas {
   display: block;
   width: 100%;
   aspect-ratio: 4 / 1;
+  display: none;
+}
+
+.analysis-results .waveform-canvas.is-visible {
+  display: block;
+}
+
+.demo-info-last-update-date {
+  font-weight: bold;
+  color: var(--primary);
+  text-decoration: none;
 }

@@ -10,40 +10,52 @@
   </head>
   <body>
     <header id="header"></header>
-    <section class="resonance-demo container">
 
-      <h1>Resonance V0.1</h1>
+    <main>
 
-      <input
-        class="audio-upload-input btn btn-secondary"
-        type="file"
-        accept="audio/*">
+      <section class="resonance-demo container">
 
-      <button
-        class="analyze-audio-button btn btn-primary">
-        Analyze Audio
-      </button>
+        <h1>Resonance V0.1.1</h1>
 
-      <div
-        class="analysis-status">
-        Waiting for audio...
-      </div>
+        <input
+          class="audio-upload-input btn btn-secondary"
+          type="file"
+          accept="audio/*">
 
-      <div
-        class="analysis-results">
+        <button
+          class="analyze-audio-button btn btn-primary">
+          Analyze Audio
+        </button>
 
-        <canvas
-          class="waveform-canvas"
-          width="1000"
-          height="300"></canvas>
+        <div
+          class="analysis-status">
+          Waiting for audio...
+        </div>
+
+        <div
+          class="analysis-results">
+
+          <canvas
+            class="waveform-canvas"
+            width="1000"
+            height="300"></canvas>
         </div>
 
       </section>
-      <div class="page-overlay"></div>
-      <footer id="footer"></footer>
+      <section class="demo-info-section container">
 
-      <script type="module"
-        src="/js/pages/builds/resonance/resonance-demo-page.js"></script>
+        <div class="demo-info-container">
 
-    </body>
-  </html>
+        </div>
+
+      </section>
+    </main>
+
+    <div class="page-overlay"></div>
+    <footer id="footer"></footer>
+
+    <script type="module"
+      src="/js/pages/builds/resonance/resonance-demo-page.js"></script>
+
+  </body>
+</html>

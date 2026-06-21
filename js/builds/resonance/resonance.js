@@ -38,7 +38,7 @@ export function initializeResonance() {
       return;
     }
 
-    statusElement.textContent = "Generating Graph....";
+    canvas.classList.add("is-visible");
 
     drawWaveform(audioBuffer, canvas);
 
