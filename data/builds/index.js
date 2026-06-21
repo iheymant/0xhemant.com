@@ -77,7 +77,7 @@ export const buildsProjectsData = [
       "An experiment exploring how websites can synchronize motion, storytelling and interaction with music in real time.",
 
     pages: {
-      overview: "/builds/resonance/",
+      overview: "/builds/resonance/demo",
     },
     launchedDate: "2026-06-20",
 
