@@ -12,4 +12,18 @@ export const resonanceChangelog = [
 
     description: "Defined the initial vision and project architecture.",
   },
+  {
+    slug: "music-upload-feature-added",
+
+    date: "2026-06-21",
+
+    version: "0.1.0",
+
+    type: "project",
+
+    title: "Music upload feature added",
+
+    description: "now music filed can be uploaded on Resonance.",
+  },
+
 ];

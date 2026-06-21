@@ -1,20 +1,11 @@
-export function detectBeats(
-  audioBuffer
-) {
+export function detectBeats(audioBuffer) {
+  const channelData = audioBuffer.getChannelData(0);
 
-  console.log(
-    "Duration:",
-    audioBuffer.duration
-  );
+  console.log(channelData);
 
-  console.log(
-    "Sample Rate:",
-    audioBuffer.sampleRate
-  );
+  console.log("Duration:", audioBuffer.duration);
 
-  console.log(
-    "Channels:",
-    audioBuffer.numberOfChannels
-  );
+  console.log("Sample Rate:", audioBuffer.sampleRate);
 
+  console.log("Channels:", audioBuffer.numberOfChannels);
 }
