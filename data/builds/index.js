@@ -69,6 +69,10 @@ export const buildsProjectsData = [
 
     featured: false,
 
+    highlights: [
+      "curently under develepment",
+    ],
+
     visibility: "public",
 
     tagline: "Music-driven web experiences.",

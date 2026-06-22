@@ -1,6 +1,7 @@
 import { heroContent } from "/data/home/hero-content.js";
 import { getRandomHeroStatement } from "/js/components/home/get-random-hero-statement.js";
 import { getHeroDescription } from "/js/components/home/get-hero-description.js";
+import { getFeaturedBuild } from "/js/components/home/get-featured-build.js";
 
 export function renderHero() {
   const homeHeroContentContainer = document.querySelector(".home-hero-content-container");
@@ -9,11 +10,12 @@ export function renderHero() {
 
   const statement = getRandomHeroStatement();
   const description = getHeroDescription();
+  const featuredBuild = getFeaturedBuild();
   const title = heroContent.title;
   const exploreButton = heroContent.cta.primary.label;
   const currentProjectButton = heroContent.cta.secondary.label;
   const exploreButtonHref = heroContent.cta.primary.href;
-  const currentProjectButtonHref = heroContent.cta.secondary.href;
+  const currentProjectButtonHref = featuredBuild.pages.overview;
 
   const homeHeroHtml = `
 
