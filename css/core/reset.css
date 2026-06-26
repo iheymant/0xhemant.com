@@ -21,5 +21,15 @@ body::selection {
   color: var(--bg);
 }
 
+body.has-update-banner {
+
+  --navbar-offset: 36px;
+
+}
+
+body {
+  --navbar-offset: 0px;
+}
+
 /* input {
   caret-color: var(--bg);}  */

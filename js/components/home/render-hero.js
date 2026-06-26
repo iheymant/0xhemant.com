@@ -16,7 +16,7 @@ export function renderHero() {
   const currentProjectButton = heroContent.cta.secondary.label;
   const exploreButtonHref = heroContent.cta.primary.href;
   const currentProjectButtonHref = featuredBuild.pages.overview;
-
+  
   const homeHeroHtml = `
 
     <div class="home-hero-content">

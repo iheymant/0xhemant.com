@@ -28,6 +28,7 @@
 @import "/css/pages/home/featured-build-highlights.css";
 @import "/css/components/builds-screenshot.css";
 @import "/css/components/build-card.css";
+@import "/css/components/nav-update-banner.css";
 
 /* pages */
 @import "/css/pages/home/home.css";
