@@ -14,6 +14,10 @@ export function setupMobileMenu() {
 
   const mainPanel = document.querySelector("#main-panel");
 
+  const siteHeader = document.querySelector(".site-header");
+
+  const navBrand = document.querySelector(".navbar-brand");
+
   if (!hamMenu || !mobileMenu || !mainPanel) {
     return;
   }
@@ -40,6 +44,9 @@ export function setupMobileMenu() {
     mobileMenu.classList.add("active");
     hamMenu.classList.add("active");
     document.body.classList.add("mobile-menu-open");
+    siteHeader.classList.remove("scrolled");
+    navBrand.style.visibility = 'hidden';
+
 
     resetPanels();
 
@@ -67,6 +74,10 @@ export function setupMobileMenu() {
 
     document.body.classList.remove("mobile-menu-open");
 
+    siteHeader.classList.add('scrolled');
+
+    navBrand.style.visibility = 'visible';
+
     resetPanels();
   }
 
@@ -85,6 +96,7 @@ export function setupMobileMenu() {
   function openPanel(panelId) {
     const currentPanel = panelStack[panelStack.length - 1];
     const targetPanel = document.querySelector(`#${panelId}`);
+
     if (!targetPanel) return;
 
     currentPanel.classList.add("panel-behind");
