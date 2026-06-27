@@ -17,6 +17,8 @@ export function initializeNavUpdateBanner() {
 
   document.body.classList.add("has-update-banner");
 
+  bannerContainer.classList.add('active');
+
   bannerContainer.innerHTML = renderNavUpdateBanner();
 
   const closeButton = bannerContainer.querySelector(".site-update-close");
@@ -32,4 +34,17 @@ export function initializeNavUpdateBanner() {
 
     document.body.classList.remove("has-update-banner");
   });
+
+  let bannerHidden = false;
+
+  function handleScroll() {
+    if (window.scrollY > 400) {
+      banner.classList.add("nav-updates--hidden");
+      document.body.classList.remove("has-update-banner");
+
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll);
 }

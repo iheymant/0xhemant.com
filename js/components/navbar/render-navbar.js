@@ -9,35 +9,27 @@ export function renderNavbar() {
 
     <header class="site-header">
 
-      <div class="reading-progress"></div>
+  <div class="reading-progress"></div>
 
-      <div class = "navbar-content">
+  <div class="navbar-content">
 
-      <div class="container">
+    <div class="container">
 
-        ${renderDesktopNav()}
-
-      </div>
-
-
-      <div class="mega-menu-layer">
-
-        ${renderMegaMenus()}
-      
-      </div>
+      ${renderDesktopNav()}
 
     </div>
 
-    </header>
+  </div>
 
-        <button class="ham-menu">
+  <div class="mega-menu-layer">
 
-          <span></span>
-          <span></span>
+    ${renderMegaMenus()}
 
-        </button>
+  </div>
 
-      ${renderMobileMenu()}
+</header>
+
+${renderMobileMenu()}
 
       
       

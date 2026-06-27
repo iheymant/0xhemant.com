@@ -7,8 +7,6 @@
 
   position: relative;
 
-  display: none;
-
   cursor: pointer;
 
   z-index: 1400;
@@ -16,6 +14,8 @@
   background: transparent;
 
   border: none;
+
+
 }
 
 /* LINES */
@@ -53,6 +53,7 @@
 
 .ham-menu.active {
   transform: scale(0.95);
+  
 }
 
 /*TOP LINE */

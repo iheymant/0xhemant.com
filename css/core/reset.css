@@ -23,7 +23,7 @@ body::selection {
 
 body.has-update-banner {
 
-  --navbar-offset: 36px;
+  --navbar-offset: 29px;
 
 }
 
@@ -31,5 +31,5 @@ body {
   --navbar-offset: 0px;
 }
 
-/* input {
-  caret-color: var(--bg);}  */
+input {
+  caret-color: var(--bg);} 

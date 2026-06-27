@@ -1,7 +1,7 @@
 import { checkNavlinksType } from "/js/components/navbar/desktop-navbar/check-navlinks-type.js";
 
 export function renderDesktopNav() {
-  return`
+  return `
 
   <nav class="desktop-nav">
 
@@ -19,14 +19,18 @@ export function renderDesktopNav() {
     </a>
 
 
-
-
     <ul class="nav-links">
 
       ${checkNavlinksType()}
 
     </ul>
 
+    <button class="ham-menu">
+
+        <span></span>
+        <span></span>
+
+      </button>
 
 
 

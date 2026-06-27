@@ -7,11 +7,6 @@
   .ham-menu {
     display: flex;
 
-    position: fixed;
-
-    top: 1.5rem;
-
-    right: 1.25rem;
 
     z-index: 2000;
   }
@@ -24,11 +19,16 @@
     display: none;
   }
 
+
 }
 
 @media (min-width: 769px) {
 
   .reading-progress {
+    display: none;
+  }
+
+  .ham-menu {
     display: none;
   }
 

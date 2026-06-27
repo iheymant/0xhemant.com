@@ -1,11 +1,139 @@
-.site-update-banner {
+.nav-update-banner {
+
+  display: flex;
 
   position: fixed;
-
-  top: 0;
 
   width: 100%;
 
   z-index: 1100;
 
+  margin-top: var(--space-xs);
+
+  transform:
+    translateY(-100%);
+
+  background:
+    color-mix(in srgb,
+      var(--primary) 5%,
+      var(--bg));
+
+}
+
+.nav-update-banner.active {
+
+  transform:
+    translateY(0);
+
+  transition:
+    transform var(--transition-slow);
+}
+
+.nav-updates {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: var(--space-lg);
+
+  border-left:
+    3px solid var(--primary);
+
+  padding:
+    0.15rem 0.5rem;
+  border-radius:
+    0 0 var(--radius) var(--radius);
+
+  transition:
+    background var(--transition),
+    border-color var(--transition);
+}
+
+.nav-updates-content {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+
+  min-width: 0;
+  text-overflow:
+    ellipsis;
+}
+
+.nav-update-category {
+  flex-shrink: 0;
+
+  font-size: var(--text-sm);
+  font-weight: 600;
+
+  color: var(--primary);
+}
+
+.nav-update-title {
+  font-size: var(--text-sm);
+  line-height: var(--line-height);
+
+  color: var(--text);
+  max-width:
+    100%;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.nav-update-published-date {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  text-overflow:
+    ellipsis;
+}
+
+.nav-updates-interaction-elements {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+
+  flex-shrink: 0;
+}
+
+.site-update-link {
+  display: inline-flex;
+  font-weight: 600;
+  user-select: none;
+  text-decoration: none;
+  color: var(--primary);
+  opacity: var(--opacity);
+}
+
+.site-update-link:hover {
+  color: var(--primary-hover);
+  opacity: var(--opacity-hover);
+}
+
+.site-updates-close {
+  padding: 0;
+
+  border: none;
+  background: none;
+
+  cursor: pointer;
+
+  font-size: var(--text-sm);
+  font-weight: 600;
+
+  color: var(--text-muted);
+
+  transition:
+    color var(--transition),
+    opacity var(--transition);
+}
+
+.nav-updates.nav-updates--hidden {
+  display: none;
+}
+
+.site-update-close:hover {
+  color: var(--text);
+
+  opacity: var(--opacity-hover);
 }
