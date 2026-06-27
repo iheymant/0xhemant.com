@@ -8,8 +8,6 @@
 
   z-index: 1100;
 
-  margin-top: var(--space-xs);
-
   transform:
     translateY(-100%);
 
