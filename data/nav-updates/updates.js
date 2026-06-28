@@ -4,7 +4,7 @@ export const navUpdates = [
 
     category: "Update",
 
-    title: "now analyise peak beats",
+    title: "Resonance now analyise peak beats",
 
     href: "/builds/resonance/demo",
 
