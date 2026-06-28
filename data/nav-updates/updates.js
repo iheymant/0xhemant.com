@@ -1,5 +1,18 @@
 export const navUpdates = [
   {
+    id: "resonance-v0.1.2",
+
+    category: "Update",
+
+    title: "now analyise peak beats",
+
+    href: "/builds/resonance/demo",
+
+    buttonLabel: "View",
+
+    publishedAt: "2026-06-28",
+  },
+  {
     id: "resonance-v0.1.1",
 
     category: "Update",

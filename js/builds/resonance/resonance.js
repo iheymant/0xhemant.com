@@ -1,8 +1,12 @@
 import { loadAudioFile } from "/js/builds/resonance/audio/audio-loader.js";
 
-import { detectBeats } from "/js/builds/resonance/analysis/beat-detector.js";
+import { extractAudioData } from "/js/builds/resonance/analysis/extract-audio-data.js";
 
 import { drawWaveform } from "/js/builds/resonance/visualization/draw-waveform.js";
+
+import { detectPeaks } from "/js/builds/resonance/analysis/detect-peaks.js";
+
+import { drawPeakMarkers } from "/js/builds/resonance//visualization/draw-waveform.js";
 
 export function initializeResonance() {
   const uploadInput = document.querySelector(".audio-upload-input");
@@ -29,8 +33,9 @@ export function initializeResonance() {
     statusElement.textContent = "Loading audio...";
 
     const audioBuffer = await loadAudioFile(file);
+    const peakEvents = detectPeaks(audioBuffer);
 
-    detectBeats(audioBuffer);
+    extractAudioData(audioBuffer);
 
     statusElement.textContent = "Audio loaded successfully.";
 
@@ -40,7 +45,10 @@ export function initializeResonance() {
 
     canvas.classList.add("is-visible");
 
+    detectPeaks(audioBuffer);
+
     drawWaveform(audioBuffer, canvas);
+    drawPeakMarkers(audioBuffer, canvas , peakEvents);
 
     statusElement.textContent = "Graph generated";
   });

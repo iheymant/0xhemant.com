@@ -85,7 +85,7 @@ export const buildsProjectsData = [
     },
     launchedDate: "2026-06-20",
 
-    lastUpdatedDate: "2026-06-21",
-    version: "0.1.1 exp",
+    lastUpdatedDate: "2026-06-28",
+    version: "0.1.2 exp",
   },
 ];

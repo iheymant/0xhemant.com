@@ -23,3 +23,19 @@ export function drawWaveform(audioBuffer, canvas) {
 
   context.stroke();
 }
+
+export function drawPeakMarkers(audioBuffer, canvas, peakEvents) {
+  const context = canvas.getContext("2d");
+  context.strokeStyle = "#0071e3";
+  context.lineWidth = 1;
+
+  context.beginPath();
+
+  peakEvents.forEach((peak) => {
+    const x = (peak.sampleIndex / audioBuffer.length) * canvas.width;
+
+    context.moveTo(x, 0);
+    context.lineTo(x, canvas.height);
+  });
+  context.stroke();
+}

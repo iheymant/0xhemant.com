@@ -38,5 +38,18 @@ export const resonanceChangelog = [
 
     description: "now after uploading Song, Graph can be displayed on Resonance.",
   },
+  {
+    slug: "peak-beats-detection-added",
+
+    date: "2026-06-28",
+
+    version: "0.1.2",
+
+    type: "project",
+
+    title: "Peak Beats detection added",
+
+    description: "peak beats where songs usually have high volume or quick changes can be visually viewed on Resonance.",
+  },
 
 ];
