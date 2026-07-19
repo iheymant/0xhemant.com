@@ -13,8 +13,6 @@ export const voicekeepPrivacyContent = {
 
   effectiveDate: "2026-06-14",
 
-  version: "0.1.0 [Beta]",
-
   sections: [
     {
       title: "Overview",

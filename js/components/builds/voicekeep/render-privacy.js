@@ -1,9 +1,11 @@
 import { formatRelativeDate } from "/js/utils/format-relative-date.js";
+import { buildsProjectsData } from "/data/builds/index.js";
 export function renderPrivacy(
   privacyContent
 ) {
 
   const lastUpdatedDate = formatRelativeDate(privacyContent.updatedAt);
+  const voicekeepData = buildsProjectsData.find(buildsProjectsData => buildsProjectsData.id === 'voicekeep'); 
 
   const sectionsHTML =
     privacyContent.sections.map(
@@ -74,7 +76,7 @@ export function renderPrivacy(
 
                 <span class="legal-meta-value">
 
-                  ${privacyContent.version}
+                  ${voicekeepData.version}
 
                 </span>
 
