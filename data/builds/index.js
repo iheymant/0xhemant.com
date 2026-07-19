@@ -47,10 +47,10 @@ export const buildsProjectsData = [
 
       keywords: ["meeting", "transcript", "memory", "voice"],
     },
-    version: "0.1.0 [Beta]",
+    version: "0.1.1 [Beta]",
     stack: ["html", "javascript", "css", "Chrome-Extension-Api"],
     launchedDate: "2026-06-14",
-    lastUpdatedDate: "2026-06-14",
+    lastUpdatedDate: "2026-07-19",
     thumbnail: "/assets/builds/images/voicekeep/logo.png",
 
     logo: "/assets/builds/images/voicekeep/logo.png",

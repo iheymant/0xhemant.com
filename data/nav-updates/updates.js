@@ -1,5 +1,18 @@
 export const navUpdates = [
   {
+    id: "voicekeep-v0.1.1",
+
+    category: "Update",
+
+    title: "VoiceKeep v0.1.1 is now live",
+
+    href: "/builds/voicekeep/",
+
+    buttonLabel: "View",
+
+    publishedAt: "2026-07-19",
+  },
+  {
     id: "resonance-v0.1.2",
 
     category: "Update",

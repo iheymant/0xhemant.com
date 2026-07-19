@@ -16,6 +16,23 @@ export const voicekeepChangelog = [
 
     ],
 
+  },
+  {
+    version: '0.1.1',
+
+    date: '2026-07-19',
+
+    changes: [
+      'Minor UI Updates',
+      
+    ],
+    fixed: ['Fixed downloading button not showing'
+
+    ],
+    recommendations: [
+
+    ],
+
   }
 
 ];
