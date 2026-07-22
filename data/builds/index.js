@@ -25,7 +25,7 @@ export const buildsProjectsData = [
         mobileOnly: false,
         desktopOnly: false,
         visible: true,
-        icon: "download",
+        icon: "moveUpRightArrow",
         order: 1,
       },
       {
