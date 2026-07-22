@@ -1,5 +1,5 @@
 import { createLinkTarget } from "/js/components/navbar/utils/create-link-target.js";
-import { icons } from "/assets/icons/icons.js";
+import { renderIcon } from "/js/utils/render-icon.js";;
 
 export function renderLinks(project) {
   const linksHTML = project.resourceLinks
@@ -13,7 +13,7 @@ export function renderLinks(project) {
         data-link-id="${link.id}"
       >
         <span>${link.label}</span>
-        ${icons[link.icon] ?? ""}
+        ${renderIcon(link.icon)}
         
       </a>
     `,
@@ -21,12 +21,12 @@ export function renderLinks(project) {
     .join("");
 
   return `
-    <section class="build-links container">
+    <div class="build-links container">
       <div class="container">
         <div class="build-links-grid">
           ${linksHTML}
         </div>
       </div>
-    </section>
+    </div>
   `;
 }

@@ -1,7 +1,7 @@
 export function createBuildHeroMarkup(project){
 
   return `
-    <section class="build-hero">
+    <div class="build-hero">
     
       <div class="container">
 
@@ -24,7 +24,7 @@ export function createBuildHeroMarkup(project){
 
       </div>
 
-    </section>
+    </div>
 
   `;
 

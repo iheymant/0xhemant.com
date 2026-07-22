@@ -19,24 +19,33 @@ export const buildsProjectsData = [
     resourceLinks: [
       {
         id: "install",
-        label: "Install",
+        label: "Install via Chrome Store",
         href: "https://chromewebstore.google.com/detail/voicekeep-beta-capture-an/dpoolddiohjpckolfhkjkoohpfadmjan",
         external: true,
         mobileOnly: false,
         desktopOnly: false,
         visible: true,
-        icon: "moveUpRightArrow",
+        icon: {
+          type: "image",
+          value:
+            "/assets/branding/external-brands/Google_Chrome_Web_Store_icon.svg",
+        },
+
         order: 1,
       },
       {
         id: "privacy",
-        label: "Privacy",
+        label: "View Privacy Policy",
         href: "/builds/voicekeep/privacy",
         external: false,
         mobileOnly: false,
         desktopOnly: false,
         visible: true,
-        icon: "download",
+        icon: {
+          type: "svg",
+          value:
+            "moveUpRightArrow",
+        },
         order: 1,
       },
     ],
@@ -61,7 +70,7 @@ export const buildsProjectsData = [
     },
   },
   {
-    id: 'resonance',
+    id: "resonance",
 
     name: "Resonance",
 
@@ -69,9 +78,7 @@ export const buildsProjectsData = [
 
     featured: false,
 
-    highlights: [
-      "curently under develepment",
-    ],
+    highlights: ["curently under develepment"],
 
     visibility: "public",
 

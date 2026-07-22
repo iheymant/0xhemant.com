@@ -29,13 +29,15 @@ export function renderVoicekeep() {
 
      ${createBuildHeroMarkup(voicekeepObj)}
 
+     ${renderLinks(voicekeepObj)}
+
      ${renderBuildGallery(voicekeepScreenshots)}
 
      ${renderOverview(voicekeepContent)}
 
      ${renderMetaData(voicekeepObj)}
 
-     ${renderLinks(voicekeepObj)}
+     
 
 
     </div>
