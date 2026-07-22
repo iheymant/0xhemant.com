@@ -8,14 +8,7 @@ export const footerData = [
         mobileOnly: false,
         deskstopOnly: false,
         external: false
-      },
-      // {
-      //   name: "Thoughts",
-      //   url: "/thoughts/",
-      //   mobileOnly: false,
-      //   deskstopOnly: false,
-      //   external: false
-      // },
+      }
     ]
   },
   {
@@ -24,18 +17,34 @@ export const footerData = [
       {
         name: 'X(formerly Twitter)',
         url: 'https://x.com/0x_hemant',
-        external: true
+        external: true,
+        icon: {
+          type: "image",
+          value:
+            "/assets/branding/external-brands/Twitter-X.svg",
+        },
+
       },
       {
         name: 'GitHub',
         url: 'https://Github.com/iheymant',
-        external: true
+        external: true,
+        icon: {
+          type: "image",
+          value:
+            "/assets/branding/external-brands/Github.svg",
+        },
 
       },
       {
         name: 'Instagram',
         url: 'https://Instagram.com/0xhemant',
-        external: true
+        external: true,
+        icon: {
+          type: "image",
+          value:
+            "/assets/branding/external-brands/Instagram.svg",
+        },
       }
     ]
   }

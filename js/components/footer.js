@@ -1,4 +1,5 @@
 import { footerData } from "/data/navigation/footer-data.js";
+import { renderIcon } from "/js/utils/render-icon.js";
 
 export function loadFooter() {
   const footerElement = document.querySelector("#footer");
@@ -15,6 +16,7 @@ export function loadFooter() {
         <li>
           <a href="${link.url}" ${target} class="footer-link">
             ${link.name}
+            ${renderIcon(link.icon)}
           </a>
         </li>
       `;
