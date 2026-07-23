@@ -1,7 +1,8 @@
-import { loadNavbar } from "/js/components/navbar/navbar.js";
+import { renderLayout } from "/js/layout/render-layout.js";
+import { initializeLayout } from "/js/layout/initialize-layout.js";
 import { initialiseBuildsPage } from "/js/components/builds/render-build-page/initialise-build-page.js";
-import { loadFooter } from "/js/components/footer.js";
 
-loadNavbar();
+
+renderLayout();
+initializeLayout();
 initialiseBuildsPage();
-loadFooter();
