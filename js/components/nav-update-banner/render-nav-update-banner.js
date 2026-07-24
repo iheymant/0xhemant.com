@@ -1,5 +1,6 @@
 import { navUpdates } from "/data/nav-updates/updates.js";
 import { formatRelativeDate } from "/js/utils/format-relative-date.js";
+import { icons } from "/assets/icons/icons.js";
 
 export function renderNavUpdateBanner() {
   const currentNavUpdate = navUpdates[0];
@@ -31,10 +32,8 @@ export function renderNavUpdateBanner() {
     ${navUpdateLabel}
    </a>
 
-   <button class="site-update-close">
-
-   ✖
-
+   <button class="site-update-close" type="button" aria-label="Close">
+   ${icons.messageClose}
    </button>
 
    </div>

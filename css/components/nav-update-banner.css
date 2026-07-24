@@ -108,10 +108,10 @@
   opacity: var(--opacity-hover);
 }
 
-.site-updates-close {
+.site-update-close {
   padding: 0;
 
-  border: none;
+  border: none ;
   background: none;
 
   cursor: pointer;
