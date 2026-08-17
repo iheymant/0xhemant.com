@@ -19,9 +19,7 @@
   width: min(100%, 920px);
 }
 
-/* =========================================
-   HEADER
-========================================= */
+/*HEADER*/
 
 .legal-page-header {
   margin-bottom: 5rem;
@@ -57,9 +55,7 @@
   opacity: var(--opacity-secondary);
 }
 
-/* =========================================
-   META GRID
-========================================= */
+/* META GRID */
 
 .legal-meta-grid {
   display: grid;
@@ -84,10 +80,6 @@
     background var(--transition);
 }
 
-/* .legal-meta-item:hover {
-  border-color: var(--text-muted);
-  transform: translateY(-2px);
-} */
 
 /* META LABEL */
 
@@ -116,9 +108,7 @@
   color: var(--text);
 }
 
-/* =========================================
-   SECTIONS
-========================================= */
+/* SECTIONS */
 
 .legal-sections {
   border-top: var(--border-width) solid var(--divider);
@@ -147,7 +137,7 @@
 .legal-section-text {
   margin: 0;
 
-  max-width: 74ch;
+  max-width: none;
 
   font-size: var(--text-base);
   font-weight: 400;
