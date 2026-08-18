@@ -1,7 +1,7 @@
 import { getFeaturedBuild } from "/js/components/home/get-featured-build.js";
 import { getFeaturedBuildHightlight } from "/js/components/home/get-featured-build-highlight.js";
 import { formatRelativeDate } from "/js/utils/format-relative-date.js";
-import { voicekeepScreenshots } from "/data/builds/voicekeep/screenshots.js";
+import { screenshotsByProject } from "../../../../../data/media/screenshots-by-projects.js";
 
 export function renderCurrentFocus() {
   const focusContainer = document.querySelector(".builds-focus-container");
@@ -12,9 +12,17 @@ export function renderCurrentFocus() {
 
   if (!featuredBuild) return;
 
-  const focusScreenshot =
-    voicekeepScreenshots.find((screenshot) => screenshot.currentFocused) ??
-    voicekeepScreenshots[0];
+  const featuredBuildId = featuredBuild.id;
+
+  const screenshots = screenshotsByProject[featuredBuild.id];
+
+  if (!screenshots) {
+    return;
+  }
+
+  const focusScreenshot = screenshots.find(
+    (screenshot) => screenshot.currentFocused,
+  );
 
   const featuredBuildHighlights = getFeaturedBuildHightlight();
 
