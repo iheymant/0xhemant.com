@@ -115,7 +115,7 @@ export const buildsProjectsData = [
       {
         id: "install",
         label: "Install via Chrome Store",
-        href: "",
+        href: "https://chromewebstore.google.com/detail/tracekeep-beta-who-unfoll/kmmimdcdnmaghjkhcnmjacfmnojcdjbc",
         external: true,
         mobileOnly: false,
         desktopOnly: false,
