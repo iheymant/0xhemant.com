@@ -1,5 +1,19 @@
 export const navUpdates = [
   {
+    id: "tracekeep-v0.1.0",
+
+    category: "New App",
+
+    title: "TraceKeep is now live",
+
+    href: "/builds/tracekeep/",
+
+    buttonLabel: "Install now",
+
+    publishedAt: "2026-08-18",
+  },
+
+  {
     id: "voicekeep-v0.1.1",
 
     category: "Update",
