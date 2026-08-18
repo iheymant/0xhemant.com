@@ -19,7 +19,7 @@
 
 .build-hero-title {
   margin: 0;
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   line-height: 1.1;
   font-weight: 700;
 }

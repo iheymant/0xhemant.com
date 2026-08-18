@@ -8,6 +8,11 @@
 
 }
 
+.build-screenshot-title {
+  font-size: clamp(1.5rem , 4vw , 2.5rem);
+
+}
+
 .build-screenshot {
 
   display: grid;

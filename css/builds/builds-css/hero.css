@@ -20,7 +20,6 @@
 
 .build-hero-title {
   margin: 0;
-  font-size: var(--text-xxl);
   line-height: var(--lineheight-md);
   font-weight: 700;
   color: var(--text);
