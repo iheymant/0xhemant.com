@@ -1,10 +1,11 @@
 import { buildsProjectsData } from "/data/builds/index.js";
 import { tracekeepContents } from "/data/builds/tracekeep/content.js";
-
+import { tracekeepScreenshots } from "../../../data/builds/tracekeep/screenshots.js";
 import { createBuildHeroMarkup } from "/js/components/builds/render-builds/create-build-hero-markup.js";
 import { renderLinks } from "/js/components/builds/render-builds/render-links.js";
 import { renderMetaData } from "/js/components/builds/render-builds/render-metadata.js";
 import { renderOverview } from "/js/components/builds/render-builds/render-content-overview.js";
+import { renderBuildGallery } from "/js/components/builds/render-builds/render-builds-gallery.js";
 
 export function renderTracekeep() {
   const tracekeepObj = buildsProjectsData.find(
@@ -28,6 +29,7 @@ export function renderTracekeep() {
 
      ${renderLinks(tracekeepObj)}
 
+     ${renderBuildGallery(tracekeepScreenshots)}
 
      ${renderOverview(tracekeepContent)}
 
