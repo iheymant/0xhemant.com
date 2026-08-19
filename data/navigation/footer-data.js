@@ -43,7 +43,7 @@ export const footerData = [
         icon: {
           type: "image",
           value:
-            "/assets/branding/external-brands/Instagram.svg",
+            "/assets/branding/external-brands/instagram-icon.svg",
         },
       }
     ]
