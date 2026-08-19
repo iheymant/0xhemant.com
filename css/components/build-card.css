@@ -237,6 +237,7 @@
   border-radius: 50%;
 
   opacity: 0.04;
+  pointer-events: none;
 
   transition:
     transform 0.5s cubic-bezier(.2, .8, .2, 1);
