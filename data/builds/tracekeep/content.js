@@ -50,13 +50,51 @@ export const tracekeepContents = {
           You do not need to log into the account you
           are tracking.
           `,
+          `
+          It simply keep the snapshot data such as followers or following of the tracked account and compare them with the new data to let you know what changes to the followers were made.
+          `,
+        ],
+      },
+      {
+        title: "Can I use my personal account?",
+
+        paragraphs: [
+          `
+    Yes, but it is important to understand the difference
+    between two accounts: the account you want to track and
+    the Instagram account TraceKeep uses to perform the
+    tracking.
+    `,
 
           `
-          TraceKeep checks available profile and
-          relationship information, creates snapshots,
-          and compares later snapshots to identify
-          changes.
-          `,
+    The account being tracked is not used to perform the
+    synchronization and does not need to be logged into
+    TraceKeep. The Instagram account that is logged into your
+    browser is the account TraceKeep uses to collect the
+    available follower and following information.
+    `,
+
+          `
+    Using TraceKeep can involve repeated requests to
+    Instagram. TraceKeep includes request delays, throttling,
+    and other controls to reduce excessive requests, but no
+    method can guarantee that an Instagram account will never
+    experience restrictions or other API-related issues.
+    `,
+
+          `
+    For this reason, if you are concerned about your personal
+    account, we recommend using a separate spare or alternative
+    Instagram account for TraceKeep. Log into that account on instagram web, install TraceKeep, open the Instagram profile
+    you want to track, and add it to TraceKeep.
+    `,
+
+          `
+    In this setup, the spare account is simply the account
+    TraceKeep uses to perform its checks. It is not the account
+    being tracked. Your personal account can remain separate
+    from TraceKeep's synchronization activity.
+    `,
         ],
       },
 
