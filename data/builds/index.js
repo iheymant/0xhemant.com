@@ -154,10 +154,10 @@ export const buildsProjectsData = [
         "history",
       ],
     },
-    version: "0.1.0 [Beta]",
+    version: "0.1.1 [Beta]",
     stack: ["javascript", "react", "css", "Chrome-Extension-Api"],
     launchedDate: "2026-08-17",
-    lastUpdatedDate: "2026-08-17",
+    lastUpdatedDate: "2026-11-21",
     thumbnail: "/assets/builds/images/tracekeep/logo-new.png",
     logo: "/assets/builds/images/tracekeep/logo-new.png",
     pages: {

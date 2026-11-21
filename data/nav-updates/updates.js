@@ -1,5 +1,18 @@
 export const navUpdates = [
   {
+    id: "tracekeep-v0.1.1",
+
+    category: "Update",
+
+    title: "Tracekeep's new version is OUT!",
+
+    href: "/builds/tracekeep/",
+
+    buttonLabel: "Install now",
+
+    publishedAt: "2026-11-21",
+  },
+  {
     id: "tracekeep-v0.1.0",
 
     category: "New App",
